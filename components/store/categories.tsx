@@ -75,7 +75,7 @@ export function Categories({ locale }: CategoriesProps) {
   const regularCats = CATEGORIES.filter(c => !c.featured);
 
   return (
-    <section className="py-32 bg-[#f8f6f3]">
+    <section id="collections" className="py-32 bg-[#f8f6f3]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="text-center mb-20">
