@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const canonicalUrl = `/${locale}`;
   
   return {
-    title: `Saunas y Spas | ${title}`,
+    title: `Luxe Interieur | ${title}`,
     description,
     alternates: {
       canonical: canonicalUrl,
@@ -42,10 +42,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       ),
     },
     openGraph: {
-      title: `Saunas y Spas | ${title}`,
+      title: `Luxe Interieur | ${title}`,
       description,
       url: canonicalUrl,
-      siteName: 'Saunas y Spas',
+      siteName: 'Luxe Interieur',
       locale: locale === 'es' ? 'es_ES' : locale === 'en' ? 'en_US' : `${locale}_${locale.toUpperCase()}`,
       type: 'website',
       images: [
@@ -53,13 +53,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           url: '/og-image.jpg',
           width: 1200,
           height: 630,
-          alt: `Saunas y Spas - ${title}`,
+          alt: `Luxe Interieur - ${title}`,
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: `Saunas y Spas | ${title}`,
+      title: `Luxe Interieur | ${title}`,
       description,
       images: ['/og-image.jpg'],
     },

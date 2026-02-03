@@ -15,74 +15,74 @@ interface PageProps {
   params: Promise<{ locale: string; slug: string[] }>;
 }
 
-// Category data for saunas and spas with localized slugs
+// Category data for luxury furniture with localized slugs
 const CATEGORIES = [
   { 
-    slug: 'saunas-finlandesas',
-    slugs: { es: 'saunas-finlandesas', en: 'finnish-saunas', de: 'finnische-saunas', fr: 'saunas-finlandais', it: 'saune-finlandesi', pt: 'saunas-finlandesas', nl: 'finse-saunas', pl: 'sauny-finskie' },
-    image: 'https://images.unsplash.com/photo-1655194911126-6032bdcccc9d?q=80&w=987&auto=format&fit=crop',
-    price: '2.500€',
-    names: { es: 'Saunas Finlandesas', en: 'Finnish Saunas', de: 'Finnische Saunas', fr: 'Saunas Finlandais', it: 'Saune Finlandesi', pt: 'Saunas Finlandesas', nl: 'Finse Saunas', pl: 'Sauny Fińskie' },
+    slug: 'sofas-lujo',
+    slugs: { es: 'sofas-lujo', en: 'luxury-sofas', de: 'luxus-sofas', fr: 'canapes-luxe', it: 'divani-lusso', pt: 'sofas-luxo', nl: 'luxe-banken', pl: 'luksusowe-sofy' },
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1470&auto=format&fit=crop',
+    price: '3.500€',
+    names: { es: 'Sofás de Lujo', en: 'Luxury Sofas', de: 'Luxus-Sofas', fr: 'Canapés de Luxe', it: 'Divani di Lusso', pt: 'Sofás de Luxo', nl: 'Luxe Banken', pl: 'Luksusowe Sofy' },
     desc: { 
-      es: 'Saunas tradicionales de madera de alta calidad. Instalación profesional incluida.', 
-      en: 'Traditional high-quality wooden saunas. Professional installation included.', 
-      de: 'Traditionelle hochwertige Holzsaunas. Professionelle Installation inklusive.', 
-      fr: 'Saunas traditionnels en bois de haute qualité. Installation professionnelle incluse.',
-      it: 'Saune tradizionali in legno di alta qualità. Installazione professionale inclusa.',
-      pt: 'Saunas tradicionais de madeira de alta qualidade. Instalação profissional incluída.',
-      nl: 'Traditionele houten sauna\'s van hoge kwaliteit. Professionele installatie inbegrepen.',
-      pl: 'Tradycyjne drewniane sauny wysokiej jakości. Profesjonalna instalacja w cenie.'
+      es: 'Sofás artesanales de alta gama. Fabricación europea, entrega e instalación incluida.', 
+      en: 'High-end artisan sofas. European craftsmanship, delivery and installation included.', 
+      de: 'Hochwertige handgefertigte Sofas. Europäische Handwerkskunst, Lieferung und Montage inklusive.', 
+      fr: 'Canapés artisanaux haut de gamme. Fabrication européenne, livraison et installation incluses.',
+      it: 'Divani artigianali di alta gamma. Artigianato europeo, consegna e installazione incluse.',
+      pt: 'Sofás artesanais de alta gama. Fabrico europeu, entrega e instalação incluídas.',
+      nl: 'Hoogwaardige ambachtelijke banken. Europees vakmanschap, levering en installatie inbegrepen.',
+      pl: 'Wysokiej klasy sofy rzemieślnicze. Europejskie rzemiosło, dostawa i montaż w cenie.'
     }
   },
   { 
-    slug: 'jacuzzis',
-    slugs: { es: 'jacuzzis', en: 'hot-tubs', de: 'whirlpools', fr: 'jacuzzis', it: 'vasche-idromassaggio', pt: 'jacuzzis', nl: 'jacuzzis', pl: 'jacuzzi' },
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=987&auto=format&fit=crop',
-    price: '3.000€',
-    names: { es: 'Jacuzzis Exterior', en: 'Outdoor Hot Tubs', de: 'Außen-Whirlpools', fr: 'Jacuzzis Extérieur', it: 'Vasche Idromassaggio', pt: 'Jacuzzis Exterior', nl: 'Buiten Jacuzzis', pl: 'Jacuzzi Zewnętrzne' },
+    slug: 'mesas-comedor',
+    slugs: { es: 'mesas-comedor', en: 'dining-tables', de: 'esstische', fr: 'tables-salle-manger', it: 'tavoli-pranzo', pt: 'mesas-jantar', nl: 'eettafels', pl: 'stoly-jadalne' },
+    image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=1632&auto=format&fit=crop',
+    price: '2.800€',
+    names: { es: 'Mesas de Comedor', en: 'Dining Tables', de: 'Esstische', fr: 'Tables à Manger', it: 'Tavoli da Pranzo', pt: 'Mesas de Jantar', nl: 'Eettafels', pl: 'Stoły Jadalne' },
     desc: { 
-      es: 'Jacuzzis para jardín y terraza. Relajación total en tu hogar.', 
-      en: 'Hot tubs for garden and terrace. Total relaxation at home.', 
-      de: 'Whirlpools für Garten und Terrasse. Totale Entspannung zu Hause.', 
-      fr: 'Jacuzzis pour jardin et terrasse. Relaxation totale chez vous.',
-      it: 'Vasche idromassaggio per giardino e terrazza. Relax totale a casa tua.',
-      pt: 'Jacuzzis para jardim e terraço. Relaxamento total em sua casa.',
-      nl: 'Jacuzzi\'s voor tuin en terras. Totale ontspanning thuis.',
-      pl: 'Jacuzzi do ogrodu i tarasu. Całkowity relaks w domu.'
+      es: 'Mesas de comedor de madera maciza. Elegancia artesanal para tu hogar.', 
+      en: 'Solid wood dining tables. Artisan elegance for your home.', 
+      de: 'Esstische aus Massivholz. Handwerkliche Eleganz für Ihr Zuhause.', 
+      fr: 'Tables à manger en bois massif. Élégance artisanale pour votre maison.',
+      it: 'Tavoli da pranzo in legno massello. Eleganza artigianale per la tua casa.',
+      pt: 'Mesas de jantar em madeira maciça. Elegância artesanal para a sua casa.',
+      nl: 'Eettafels van massief hout. Ambachtelijke elegantie voor uw huis.',
+      pl: 'Stoły jadalne z litego drewna. Rzemieślnicza elegancja dla Twojego domu.'
     }
   },
   { 
-    slug: 'spas',
-    slugs: { es: 'spas', en: 'spas', de: 'spas', fr: 'spas', it: 'spa', pt: 'spas', nl: 'spas', pl: 'spa' },
-    image: 'https://img.edilportale.com/product-thumbs/b_Jacuzzi_J-475_XugmIfCBJW.jpeg',
-    price: '1.500€',
-    names: { es: 'Spas & Hidromasaje', en: 'Spas & Whirlpools', de: 'Spas & Whirlpools', fr: 'Spas & Balnéo', it: 'Spa & Idromassaggio', pt: 'Spas & Hidromassagem', nl: 'Spas & Whirlpools', pl: 'Spa & Hydromasaż' },
+    slug: 'sillones-diseno',
+    slugs: { es: 'sillones-diseno', en: 'designer-armchairs', de: 'designer-sessel', fr: 'fauteuils-design', it: 'poltrone-design', pt: 'poltronas-design', nl: 'design-fauteuils', pl: 'fotele-designerskie' },
+    image: 'https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?q=80&w=1287&auto=format&fit=crop',
+    price: '1.900€',
+    names: { es: 'Sillones de Diseño', en: 'Designer Armchairs', de: 'Designer-Sessel', fr: 'Fauteuils Design', it: 'Poltrone di Design', pt: 'Poltronas de Design', nl: 'Design Fauteuils', pl: 'Fotele Designerskie' },
     desc: { 
-      es: 'Bañeras de hidromasaje para interior. Bienestar y relajación.', 
-      en: 'Indoor whirlpool baths. Wellness and relaxation.', 
-      de: 'Whirlpool-Badewannen für den Innenbereich. Wellness und Entspannung.', 
-      fr: 'Baignoires balnéo pour intérieur. Bien-être et relaxation.',
-      it: 'Vasche idromassaggio per interni. Benessere e relax.',
-      pt: 'Banheiras de hidromassagem para interior. Bem-estar e relaxamento.',
-      nl: 'Whirlpoolbaden voor binnen. Wellness en ontspanning.',
-      pl: 'Wanny z hydromasażem do wnętrz. Wellness i relaks.'
+      es: 'Sillones de diseño icónico. Confort y estilo excepcional.', 
+      en: 'Iconic designer armchairs. Exceptional comfort and style.', 
+      de: 'Ikonische Designer-Sessel. Außergewöhnlicher Komfort und Stil.', 
+      fr: 'Fauteuils au design iconique. Confort et style exceptionnels.',
+      it: 'Poltrone dal design iconico. Comfort e stile eccezionali.',
+      pt: 'Poltronas de design icónico. Conforto e estilo excecionais.',
+      nl: 'Iconische design fauteuils. Uitzonderlijk comfort en stijl.',
+      pl: 'Kultowe fotele designerskie. Wyjątkowy komfort i styl.'
     }
   },
   { 
-    slug: 'infrarrojos',
-    slugs: { es: 'infrarrojos', en: 'infrared-cabins', de: 'infrarotkabinen', fr: 'cabines-infrarouges', it: 'cabine-infrarossi', pt: 'cabines-infravermelhos', nl: 'infrarood-cabines', pl: 'kabiny-na-podczerwien' },
-    image: 'https://aurorahomeluxury.co.uk/cdn/shop/files/insignia-outdoor-hybrid-infrared-sauna-1700-x-1500mm-gardensetting_1200x1200_crop_center.jpg?v=1726583291',
-    price: '1.200€',
-    names: { es: 'Cabinas Infrarrojos', en: 'Infrared Cabins', de: 'Infrarotkabinen', fr: 'Cabines Infrarouges', it: 'Cabine Infrarossi', pt: 'Cabines Infravermelhos', nl: 'Infrarood Cabines', pl: 'Kabiny na Podczerwień' },
+    slug: 'camas-premium',
+    slugs: { es: 'camas-premium', en: 'premium-beds', de: 'premium-betten', fr: 'lits-premium', it: 'letti-premium', pt: 'camas-premium', nl: 'premium-bedden', pl: 'lozka-premium' },
+    image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1470&auto=format&fit=crop',
+    price: '4.200€',
+    names: { es: 'Camas Premium', en: 'Premium Beds', de: 'Premium-Betten', fr: 'Lits Premium', it: 'Letti Premium', pt: 'Camas Premium', nl: 'Premium Bedden', pl: 'Łóżka Premium' },
     desc: { 
-      es: 'Cabinas de terapia infrarroja. Beneficios para la salud.', 
-      en: 'Infrared therapy cabins. Health benefits.', 
-      de: 'Infrarot-Therapiekabinen. Gesundheitsvorteile.', 
-      fr: 'Cabines de thérapie infrarouge. Bienfaits pour la santé.',
-      it: 'Cabine per terapia a infrarossi. Benefici per la salute.',
-      pt: 'Cabines de terapia infravermelha. Benefícios para a saúde.',
-      nl: 'Infrarood therapiecabines. Gezondheidsvoordelen.',
-      pl: 'Kabiny do terapii na podczerwień. Korzyści zdrowotne.'
+      es: 'Camas de lujo para un descanso sublime. Calidad que perdura.', 
+      en: 'Luxury beds for sublime rest. Quality that lasts.', 
+      de: 'Luxusbetten für erhabene Ruhe. Qualität die hält.', 
+      fr: 'Lits de luxe pour un repos sublime. Qualité qui dure.',
+      it: 'Letti di lusso per un riposo sublime. Qualità che dura.',
+      pt: 'Camas de luxo para um descanso sublime. Qualidade que perdura.',
+      nl: 'Luxe bedden voor sublieme rust. Kwaliteit die blijft.',
+      pl: 'Luksusowe łóżka dla wzniosłego odpoczynku. Jakość która trwa.'
     }
   },
 ];
@@ -96,7 +96,7 @@ function getCategoryBySlug(slug: string) {
   });
 }
 
-const SITE_URL = "https://saunaspa.io";
+const SITE_URL = "https://luxeinterieur.io";
 
 // Dynamic metadata for Google SEO
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -104,12 +104,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const validLocale = (SUPPORTED_LOCALES.includes(locale as Locale) ? locale : 'es') as Locale;
   const category = getCategoryBySlug(slug?.[0] || '');
   
-  const catName = category?.names[validLocale as keyof typeof category.names] || category?.names.es || 'Saunas y Spas';
-  const catDesc = category?.desc[validLocale as keyof typeof category.desc] || category?.desc.es || 'Saunas finlandesas, jacuzzis y spas para tu hogar.';
-  const ogImage = category?.image ? `${category.image.split('?')[0]}?w=1200&h=630&fit=crop&q=80` : 'https://images.unsplash.com/photo-1655194911126-6032bdcccc9d?w=1200&h=630&fit=crop&q=80';
+  const catName = category?.names[validLocale as keyof typeof category.names] || category?.names.es || 'Muebles de Lujo';
+  const catDesc = category?.desc[validLocale as keyof typeof category.desc] || category?.desc.es || 'Mobiliario de lujo artesanal para tu hogar.';
+  const ogImage = category?.image ? `${category.image.split('?')[0]}?w=1200&h=630&fit=crop&q=80` : 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&h=630&fit=crop&q=80';
   
-  const title = `${catName} | Sauna Spa`;
-  const description = `${catDesc} Garantía 5 años, instalación profesional incluida.`;
+  const title = `${catName} | Luxe Interieur`;
+  const description = `${catDesc} Fabricación europea, entrega e instalación incluida.`;
   const canonicalUrl = `${SITE_URL}/${locale}/${slug?.join('/') || ''}`;
 
   return {
@@ -120,7 +120,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title,
       description,
       url: canonicalUrl,
-      siteName: 'Sauna Spa',
+      siteName: 'Luxe Interieur',
       locale: locale === 'es' ? 'es_ES' : locale === 'en' ? 'en_US' : `${locale}_${locale.toUpperCase()}`,
       type: 'website',
       images: [{ url: ogImage, width: 1200, height: 630, alt: catName }],
@@ -140,9 +140,9 @@ export default async function DynamicPage({ params }: PageProps) {
   const validLocale = SUPPORTED_LOCALES.includes(locale as Locale) ? locale as Locale : 'es';
   const category = getCategoryBySlug(slug?.[0] || '');
   
-  const catName = category?.names[validLocale as keyof typeof category.names] || category?.names.es || 'Saunas y Spas';
-  const catDesc = category?.desc[validLocale as keyof typeof category.desc] || category?.desc.es || '';
-  const catImage = category?.image || 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200&h=800&fit=crop';
+  const catName = category?.names[validLocale as keyof typeof category.names] || category?.names.es || 'Muebles de Lujo';
+  const catDesc = category?.desc[validLocale as keyof typeof category.desc] || category?.desc.es || 'Mobiliario de lujo artesanal para tu hogar.';
+  const catImage = category?.image || 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1470&auto=format&fit=crop';
   const catPrice = category?.price || '2.500€';
   
   // Related categories

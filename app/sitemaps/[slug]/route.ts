@@ -1,7 +1,7 @@
 import { SUPPORTED_LOCALES, CATEGORIES, CATEGORY_TRANSLATIONS, LOCALES, INTENT_TRANSLATIONS, type Locale } from "@/lib/seo-data";
 import citiesData from "@/lib/cities-processed.json";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://saunaspa.io";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://luxeinterieur.io";
 
 // Type for cities data
 type CityData = { name: string; slug: string; population: number };
@@ -75,21 +75,21 @@ export async function GET(_request: Request, { params }: RouteParams) {
     }
   }
 
-  // 5. Sauna-specific modifiers
-  const saunaModifiers: Record<string, string[]> = {
-    es: ['organico', 'premium', 'laboratorio', 'natural', 'legal', 'certificado'],
-    en: ['organic', 'premium', 'lab-tested', 'natural', 'legal', 'certified'],
-    de: ['bio', 'premium', 'laborgetestet', 'natuerlich', 'legal', 'zertifiziert'],
-    fr: ['bio', 'premium', 'teste-laboratoire', 'naturel', 'legal', 'certifie'],
-    it: ['biologico', 'premium', 'testato-laboratorio', 'naturale', 'legale', 'certificato'],
-    pt: ['organico', 'premium', 'testado-laboratorio', 'natural', 'legal', 'certificado'],
-    nl: ['biologisch', 'premium', 'labgetest', 'natuurlijk', 'legaal', 'gecertificeerd'],
-    pl: ['organiczny', 'premium', 'testowany', 'naturalny', 'legalny', 'certyfikowany'],
-    cs: ['bio', 'premium', 'testovano', 'prirodni', 'legalni', 'certifikovany'],
-    el: ['viologiko', 'premium', 'ergastiriako', 'fysiko', 'nomimo', 'pistopoiimeno'],
+  // 5. Furniture-specific modifiers
+  const furnitureModifiers: Record<string, string[]> = {
+    es: ['lujo', 'premium', 'artesanal', 'moderno', 'clasico', 'diseno'],
+    en: ['luxury', 'premium', 'artisan', 'modern', 'classic', 'designer'],
+    de: ['luxus', 'premium', 'handgefertigt', 'modern', 'klassisch', 'designer'],
+    fr: ['luxe', 'premium', 'artisanal', 'moderne', 'classique', 'design'],
+    it: ['lusso', 'premium', 'artigianale', 'moderno', 'classico', 'design'],
+    pt: ['luxo', 'premium', 'artesanal', 'moderno', 'classico', 'design'],
+    nl: ['luxe', 'premium', 'ambachtelijk', 'modern', 'klassiek', 'design'],
+    pl: ['luksusowy', 'premium', 'rzemieślniczy', 'nowoczesny', 'klasyczny', 'designerski'],
+    cs: ['luxusni', 'premium', 'rucni-vyroba', 'moderni', 'klasicky', 'designovy'],
+    el: ['politelias', 'premium', 'cheirotechnito', 'moderno', 'klasiko', 'design'],
   };
 
-  const modifiers = saunaModifiers[cleanLocale] || saunaModifiers.en;
+  const modifiers = furnitureModifiers[cleanLocale] || furnitureModifiers.en;
   for (const modifier of modifiers) {
     for (const cat of CATEGORIES.slice(0, 5)) {
       const catSlug = catTranslations[cat].replace(/ /g, '-');

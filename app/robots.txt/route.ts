@@ -1,8 +1,8 @@
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://saunaspa.io'
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://luxeinterieur.io'
 
 export async function GET() {
-  const robotsTxt = `# SaunaSpa.io Robots.txt
-# https://saunaspa.io
+  const robotsTxt = `# LuxeInterieur.io Robots.txt
+# https://luxeinterieur.io
 
 User-agent: *
 Allow: /
