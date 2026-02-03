@@ -153,12 +153,12 @@ export default async function DynamicPage({ params }: PageProps) {
     locale: validLocale as SEOData['locale'],
     pageType: 'category',
     product: catName,
-    productSlug: category?.slug || 'saunas',
-    priceMin: parseInt(catPrice.replace(/[^0-9]/g, '')) || 1200,
-    priceMax: parseInt(catPrice.replace(/[^0-9]/g, '')) * 5 || 15000,
-    brand: 'Sauna Spa',
-    domain: 'saunaspa.io',
-    warranty: '5 años',
+    productSlug: category?.slug || 'sofas-lujo',
+    priceMin: parseInt(catPrice.replace(/[^0-9]/g, '')) || 1900,
+    priceMax: parseInt(catPrice.replace(/[^0-9]/g, '')) * 5 || 20000,
+    brand: 'Luxe Interieur',
+    domain: 'luxeinterieur.io',
+    warranty: '10 años',
     relatedProducts: relatedCategories.map(c => ({
       name: c.names[validLocale as keyof typeof c.names] || c.names.es,
       slug: c.slug,
@@ -167,155 +167,145 @@ export default async function DynamicPage({ params }: PageProps) {
   };
   
   // Translations
-  const texts: Record<string, { from: string; quote: string; features: string; related: string; warranty: string; delivery: string; catalog: string; quality: string }> = {
-    es: { from: 'Desde', quote: 'Solicitar Presupuesto', features: 'Características', related: 'Otros productos', warranty: 'Garantía 5 años', delivery: 'Instalación incluida', catalog: 'Ver Catálogo', quality: 'Calidad Premium' },
-    en: { from: 'From', quote: 'Request Quote', features: 'Features', related: 'Other products', warranty: '5 year warranty', delivery: 'Installation included', catalog: 'View Catalog', quality: 'Premium Quality' },
-    de: { from: 'Ab', quote: 'Angebot Anfordern', features: 'Eigenschaften', related: 'Andere Produkte', warranty: '5 Jahre Garantie', delivery: 'Installation inklusive', catalog: 'Katalog Ansehen', quality: 'Premium Qualität' },
-    fr: { from: 'À partir de', quote: 'Demander un Devis', features: 'Caractéristiques', related: 'Autres produits', warranty: 'Garantie 5 ans', delivery: 'Installation incluse', catalog: 'Voir Catalogue', quality: 'Qualité Premium' },
-    it: { from: 'Da', quote: 'Richiedi Preventivo', features: 'Caratteristiche', related: 'Altri prodotti', warranty: 'Garanzia 5 anni', delivery: 'Installazione inclusa', catalog: 'Vedi Catalogo', quality: 'Qualità Premium' },
-    pt: { from: 'Desde', quote: 'Solicitar Orçamento', features: 'Características', related: 'Outros produtos', warranty: 'Garantia 5 anos', delivery: 'Instalação incluída', catalog: 'Ver Catálogo', quality: 'Qualidade Premium' },
-    nl: { from: 'Vanaf', quote: 'Offerte Aanvragen', features: 'Kenmerken', related: 'Andere producten', warranty: '5 jaar garantie', delivery: 'Installatie inbegrepen', catalog: 'Bekijk Catalogus', quality: 'Premium Kwaliteit' },
-    pl: { from: 'Od', quote: 'Poproś o Wycenę', features: 'Cechy', related: 'Inne produkty', warranty: 'Gwarancja 5 lat', delivery: 'Instalacja w cenie', catalog: 'Zobacz Katalog', quality: 'Jakość Premium' },
+  const texts: Record<string, { from: string; quote: string; features: string; related: string; warranty: string; delivery: string; catalog: string; quality: string; crafted: string; bespoke: string; european: string }> = {
+    es: { from: 'Desde', quote: 'Solicitar Proyecto', features: 'Características', related: 'Otras colecciones', warranty: 'Garantía 10 años', delivery: 'Entrega e instalación', catalog: 'Ver Colecciones', quality: 'Calidad Artesanal', crafted: 'Fabricación europea', bespoke: 'Diseño a medida', european: 'Materiales nobles' },
+    en: { from: 'From', quote: 'Request Project', features: 'Features', related: 'Other collections', warranty: '10 year warranty', delivery: 'Delivery & installation', catalog: 'View Collections', quality: 'Artisan Quality', crafted: 'European craftsmanship', bespoke: 'Bespoke design', european: 'Noble materials' },
+    de: { from: 'Ab', quote: 'Projekt Anfragen', features: 'Eigenschaften', related: 'Andere Kollektionen', warranty: '10 Jahre Garantie', delivery: 'Lieferung & Montage', catalog: 'Kollektionen Ansehen', quality: 'Handwerksqualität', crafted: 'Europäische Handwerkskunst', bespoke: 'Maßanfertigung', european: 'Edle Materialien' },
+    fr: { from: 'À partir de', quote: 'Demander un Projet', features: 'Caractéristiques', related: 'Autres collections', warranty: 'Garantie 10 ans', delivery: 'Livraison & installation', catalog: 'Voir Collections', quality: 'Qualité Artisanale', crafted: 'Fabrication européenne', bespoke: 'Design sur mesure', european: 'Matériaux nobles' },
+    it: { from: 'Da', quote: 'Richiedi Progetto', features: 'Caratteristiche', related: 'Altre collezioni', warranty: 'Garanzia 10 anni', delivery: 'Consegna & installazione', catalog: 'Vedi Collezioni', quality: 'Qualità Artigianale', crafted: 'Artigianato europeo', bespoke: 'Design su misura', european: 'Materiali nobili' },
+    pt: { from: 'Desde', quote: 'Solicitar Projeto', features: 'Características', related: 'Outras coleções', warranty: 'Garantia 10 anos', delivery: 'Entrega & instalação', catalog: 'Ver Coleções', quality: 'Qualidade Artesanal', crafted: 'Fabrico europeu', bespoke: 'Design por medida', european: 'Materiais nobres' },
+    nl: { from: 'Vanaf', quote: 'Project Aanvragen', features: 'Kenmerken', related: 'Andere collecties', warranty: '10 jaar garantie', delivery: 'Levering & installatie', catalog: 'Bekijk Collecties', quality: 'Ambachtelijke Kwaliteit', crafted: 'Europees vakmanschap', bespoke: 'Op maat ontwerp', european: 'Edele materialen' },
+    pl: { from: 'Od', quote: 'Zamów Projekt', features: 'Cechy', related: 'Inne kolekcje', warranty: 'Gwarancja 10 lat', delivery: 'Dostawa i montaż', catalog: 'Zobacz Kolekcje', quality: 'Jakość Rzemieślnicza', crafted: 'Europejskie rzemiosło', bespoke: 'Design na wymiar', european: 'Szlachetne materiały' },
   };
   const t = texts[validLocale] || texts.es;
 
   return (
-    <div className="min-h-screen bg-[#fafaf9]">
+    <div className="min-h-screen bg-[#f8f6f3]">
       <Header locale={validLocale} />
       
-      <main className="pt-14">
-        {/* Hero */}
-        <section className="py-16 md:py-24 bg-white">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Content */}
-              <div>
-                <span className="inline-block text-xs tracking-widest text-neutral-400 uppercase mb-6">
-                  Sauna Spa
+      <main>
+        {/* Luxury Hero - Full Width Image with Overlay */}
+        <section className="relative min-h-[85vh]">
+          {/* Background Image */}
+          <Image
+            src={catImage}
+            alt={catName}
+            fill
+            className="object-cover"
+            priority
+          />
+          {/* Elegant Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
+          
+          {/* Content */}
+          <div className="relative z-10 min-h-[85vh] flex items-center">
+            <div className="max-w-7xl mx-auto px-6 lg:px-12 py-32 pt-40">
+              <div className="max-w-2xl">
+                {/* Tag */}
+                <span className="inline-block text-xs tracking-[0.3em] text-amber-200/80 uppercase mb-8 font-light">
+                  Luxe Interieur
                 </span>
-                <h1 className="text-4xl md:text-5xl font-light text-neutral-900 leading-tight mb-6">
+
+                {/* Title */}
+                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extralight text-white leading-[1.05] mb-8 tracking-tight">
                   {catName}
                 </h1>
-                <p className="text-lg text-neutral-500 mb-8 leading-relaxed">
+
+                {/* Description */}
+                <p className="text-lg text-white/70 leading-relaxed mb-8 max-w-lg font-light">
                   {catDesc}
                 </p>
                 
                 {/* Price */}
-                <div className="mb-8">
-                  <span className="text-sm text-neutral-400">{t.from}</span>
-                  <p className="text-3xl font-light text-neutral-900">{catPrice}</p>
+                <div className="mb-12">
+                  <span className="text-sm text-white/50 tracking-wider uppercase">{t.from}</span>
+                  <p className="text-4xl font-extralight text-white tracking-tight mt-1">{catPrice}</p>
                 </div>
                 
                 {/* CTAs */}
                 <div className="flex flex-col sm:flex-row gap-4">
                   <IntercomButton 
                     text={t.quote}
-                    className="px-8 py-4 bg-neutral-900 text-white text-sm rounded-full hover:bg-neutral-800 transition-colors"
+                    className="px-10 py-5 bg-white text-neutral-900 text-sm tracking-wide hover:bg-amber-50 transition-all duration-300"
                   />
                   <Link 
                     href={`/${locale}`}
-                    className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-neutral-200 text-neutral-700 text-sm rounded-full hover:bg-neutral-100 transition-colors"
+                    className="inline-flex items-center justify-center gap-3 px-10 py-5 border border-white/30 text-white text-sm tracking-wide hover:bg-white/10 transition-all duration-300"
                   >
                     {t.catalog}
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
               </div>
-              
-              {/* Image */}
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-                <Image
-                  src={catImage}
-                  alt={catName}
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
             </div>
           </div>
         </section>
 
-        {/* Features */}
-        <section className="py-16 border-t border-neutral-100">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Luxury Features Bar */}
+        <section className="py-20 bg-white border-b border-neutral-100">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
               {[
-                { title: t.warranty, desc: 'Cobertura completa en todos los productos' },
-                { title: 'Calidad Premium', desc: 'Materiales de primera calidad' },
-                { title: t.delivery, desc: 'Entrega en toda España' },
+                { title: t.warranty, desc: t.quality },
+                { title: t.crafted, desc: t.european },
+                { title: t.bespoke, desc: t.delivery },
+                { title: t.quality, desc: t.warranty },
               ].map((feature, i) => (
-                <div key={i} className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-neutral-100 flex items-center justify-center flex-shrink-0">
-                    <Check className="w-5 h-5 text-neutral-600" />
+                <div key={i} className="text-center">
+                  <div className="w-12 h-12 mx-auto mb-6 border border-neutral-200 flex items-center justify-center">
+                    <Check className="w-5 h-5 text-amber-600" />
                   </div>
-                  <div>
-                    <p className="font-medium text-neutral-900">{feature.title}</p>
-                    <p className="text-sm text-neutral-500 mt-1">{feature.desc}</p>
-                  </div>
+                  <p className="text-sm font-light text-neutral-900 tracking-wide">{feature.title}</p>
+                  <p className="text-xs text-neutral-400 mt-2">{feature.desc}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Reviews */}
-        <section className="py-16 bg-white border-t border-neutral-100">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="grid md:grid-cols-3 gap-6">
+        {/* Reviews - Luxury Style */}
+        <section className="py-24 bg-[#f8f6f3]">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12">
+            <h2 className="text-3xl font-extralight text-neutral-900 text-center mb-16 tracking-tight">
+              {validLocale === 'es' ? 'Lo que dicen nuestros clientes' : validLocale === 'en' ? 'What our clients say' : validLocale === 'de' ? 'Was unsere Kunden sagen' : 'Ce que disent nos clients'}
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8">
               {(() => {
-                const reviews: Record<string, { text: string; author: string }[]> = {
+                const reviews: Record<string, { text: string; author: string; location: string }[]> = {
                   es: [
-                    { text: 'Excelente calidad y servicio. La instalación fue rápida y profesional.', author: 'Cliente verificado' },
-                    { text: 'Muy contentos con nuestra sauna. Superó todas nuestras expectativas.', author: 'Cliente verificado' },
-                    { text: 'El equipo fue muy profesional. Recomendado 100%.', author: 'Cliente verificado' },
+                    { text: 'La calidad del sofá es excepcional. El cuero italiano es suave y el acabado impecable. Un verdadero lujo.', author: 'María García', location: 'Madrid' },
+                    { text: 'Diseño a medida perfecto para nuestro salón. El equipo fue muy profesional y atento a cada detalle.', author: 'Carlos Ruiz', location: 'Barcelona' },
+                    { text: 'Muebles que transforman espacios. La mesa de comedor es una obra de arte. Recomendado 100%.', author: 'Ana Martínez', location: 'Valencia' },
                   ],
                   en: [
-                    { text: 'Excellent quality and service. Installation was quick and professional.', author: 'Verified customer' },
-                    { text: 'Very happy with our sauna. Exceeded all our expectations.', author: 'Verified customer' },
-                    { text: 'The team was very professional. 100% recommended.', author: 'Verified customer' },
+                    { text: 'The sofa quality is exceptional. Italian leather is soft and the finish impeccable. True luxury.', author: 'James Wilson', location: 'London' },
+                    { text: 'Perfect bespoke design for our living room. The team was very professional and attentive to every detail.', author: 'Sarah Thompson', location: 'Manchester' },
+                    { text: 'Furniture that transforms spaces. The dining table is a work of art. 100% recommended.', author: 'Michael Brown', location: 'Edinburgh' },
                   ],
                   de: [
-                    { text: 'Ausgezeichnete Qualität und Service. Die Installation war schnell und professionell.', author: 'Verifizierter Kunde' },
-                    { text: 'Sehr zufrieden mit unserer Sauna. Hat alle Erwartungen übertroffen.', author: 'Verifizierter Kunde' },
-                    { text: 'Das Team war sehr professionell. 100% empfohlen.', author: 'Verifizierter Kunde' },
+                    { text: 'Die Qualität des Sofas ist außergewöhnlich. Italienisches Leder ist weich und die Verarbeitung makellos.', author: 'Hans Müller', location: 'München' },
+                    { text: 'Perfektes maßgeschneidertes Design für unser Wohnzimmer. Das Team war sehr professionell.', author: 'Anna Schmidt', location: 'Berlin' },
+                    { text: 'Möbel, die Räume verwandeln. Der Esstisch ist ein Kunstwerk. 100% empfohlen.', author: 'Thomas Weber', location: 'Hamburg' },
                   ],
                   fr: [
-                    { text: 'Excellente qualité et service. L\'installation a été rapide et professionnelle.', author: 'Client vérifié' },
-                    { text: 'Très satisfaits de notre sauna. A dépassé toutes nos attentes.', author: 'Client vérifié' },
-                    { text: 'L\'équipe était très professionnelle. Recommandé à 100%.', author: 'Client vérifié' },
-                  ],
-                  it: [
-                    { text: 'Qualità e servizio eccellenti. L\'installazione è stata rapida e professionale.', author: 'Cliente verificato' },
-                    { text: 'Molto soddisfatti della nostra sauna. Ha superato tutte le aspettative.', author: 'Cliente verificato' },
-                    { text: 'Il team è stato molto professionale. Consigliato al 100%.', author: 'Cliente verificato' },
-                  ],
-                  pt: [
-                    { text: 'Excelente qualidade e serviço. A instalação foi rápida e profissional.', author: 'Cliente verificado' },
-                    { text: 'Muito satisfeitos com nossa sauna. Superou todas as expectativas.', author: 'Cliente verificado' },
-                    { text: 'A equipe foi muito profissional. Recomendado 100%.', author: 'Cliente verificado' },
-                  ],
-                  nl: [
-                    { text: 'Uitstekende kwaliteit en service. Installatie was snel en professioneel.', author: 'Geverifieerde klant' },
-                    { text: 'Zeer tevreden met onze sauna. Overtrof al onze verwachtingen.', author: 'Geverifieerde klant' },
-                    { text: 'Het team was zeer professioneel. 100% aanbevolen.', author: 'Geverifieerde klant' },
-                  ],
-                  pl: [
-                    { text: 'Doskonała jakość i obsługa. Instalacja była szybka i profesjonalna.', author: 'Zweryfikowany klient' },
-                    { text: 'Bardzo zadowoleni z naszej sauny. Przekroczyła wszystkie oczekiwania.', author: 'Zweryfikowany klient' },
-                    { text: 'Zespół był bardzo profesjonalny. Polecam w 100%.', author: 'Zweryfikowany klient' },
+                    { text: 'La qualité du canapé est exceptionnelle. Le cuir italien est doux et la finition impeccable.', author: 'Marie Dubois', location: 'Paris' },
+                    { text: 'Design sur mesure parfait pour notre salon. L\'équipe était très professionnelle.', author: 'Pierre Martin', location: 'Lyon' },
+                    { text: 'Des meubles qui transforment les espaces. La table à manger est une œuvre d\'art.', author: 'Sophie Bernard', location: 'Marseille' },
                   ],
                 };
                 const r = reviews[validLocale] || reviews.es;
                 return r.map((review, i) => (
-                  <div key={i} className="p-6 bg-neutral-50 rounded-2xl">
-                    <div className="flex gap-1 mb-3">
+                  <div key={i} className="bg-white p-10">
+                    <div className="flex gap-1 mb-6">
                       {[1, 2, 3, 4, 5].map((s) => (
-                        <Star key={s} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                        <Star key={s} className="w-4 h-4 fill-amber-500 text-amber-500" />
                       ))}
                     </div>
-                    <p className="text-sm text-neutral-600 mb-4">"{review.text}"</p>
-                    <p className="text-xs text-neutral-400">{review.author}</p>
+                    <p className="text-neutral-600 mb-8 leading-relaxed font-light">"{review.text}"</p>
+                    <div className="border-t border-neutral-100 pt-6">
+                      <p className="text-sm font-medium text-neutral-900">{review.author}</p>
+                      <p className="text-xs text-neutral-400 mt-1">{review.location}</p>
+                    </div>
                   </div>
                 ));
               })()}
@@ -327,34 +317,37 @@ export default async function DynamicPage({ params }: PageProps) {
         <ShopifyProducts 
           locale={validLocale} 
           collection={category?.slug} 
-          title={`${catName} - Productos Destacados`}
+          title={catName}
           limit={8}
         />
 
-        {/* Related Products */}
-        <section className="py-16 border-t border-neutral-100">
-          <div className="max-w-6xl mx-auto px-6">
-            <h2 className="text-2xl font-light text-neutral-900 mb-8">{t.related}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Related Collections - Luxury Grid */}
+        <section className="py-32 bg-white">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12">
+            <h2 className="text-4xl font-extralight text-neutral-900 text-center mb-6 tracking-tight">{t.related}</h2>
+            <p className="text-neutral-500 text-center mb-16 font-light">
+              {validLocale === 'es' ? 'Descubre más piezas exclusivas' : validLocale === 'en' ? 'Discover more exclusive pieces' : 'Entdecken Sie mehr exklusive Stücke'}
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {relatedCategories.map((cat) => (
                 <Link 
                   key={cat.slug}
                   href={`/${locale}/${cat.slug}`}
                   className="group"
                 >
-                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-100 mb-4">
+                  <div className="relative aspect-[4/3] overflow-hidden bg-neutral-100 mb-6">
                     <Image
                       src={cat.image}
                       alt={cat.names[validLocale as keyof typeof cat.names] || cat.names.es}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>
-                  <h3 className="text-lg font-medium text-neutral-900 group-hover:text-neutral-600 transition-colors">
+                  <h3 className="text-xl font-light text-neutral-900 mb-2 tracking-tight group-hover:text-amber-700 transition-colors">
                     {cat.names[validLocale as keyof typeof cat.names] || cat.names.es}
                   </h3>
-                  <p className="text-sm text-neutral-400 mt-1">
-                    {t.from} <span className="font-medium text-neutral-900">{cat.price}</span>
+                  <p className="text-sm text-neutral-400 font-light">
+                    {t.from} <span className="text-neutral-900">{cat.price}</span>
                   </p>
                 </Link>
               ))}
