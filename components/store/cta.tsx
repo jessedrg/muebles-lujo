@@ -40,7 +40,7 @@ export function CTA({ locale }: CTAProps) {
             {t.cta}
           </button>
           <Link 
-            href={`/${locale === 'en' ? '' : locale + '/'}sofas-lujo`}
+            href={`/${locale}/sofas-lujo`}
             className="inline-flex items-center gap-2 px-8 py-4 border border-neutral-700 text-white text-sm rounded-full hover:bg-neutral-800 transition-colors"
           >
             {t.catalog}

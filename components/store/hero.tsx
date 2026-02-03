@@ -156,7 +156,7 @@ export function Hero({ locale }: HeroProps) {
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-4 mb-20">
                 <Link 
-                  href={`/${locale === 'en' ? '' : locale + '/'}sofas-lujo`}
+                  href={`/${locale}/sofas-lujo`}
                   className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white text-neutral-900 text-sm tracking-wide hover:bg-amber-50 transition-all duration-300"
                 >
                   {t.cta}

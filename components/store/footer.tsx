@@ -36,7 +36,7 @@ export function Footer({ locale }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <Link href={`/${locale === 'en' ? '' : locale}`} className="text-lg font-light text-neutral-900">
+            <Link href={`/${locale}`} className="text-lg font-light text-neutral-900">
               Luxe Interieur
             </Link>
             <p className="text-sm text-neutral-500 mt-4 max-w-xs leading-relaxed">
@@ -51,7 +51,7 @@ export function Footer({ locale }: FooterProps) {
               {cats.map((cat) => (
                 <li key={cat.slug}>
                   <Link 
-                    href={`/${locale === 'en' ? '' : locale + '/'}${cat.slug}`}
+                    href={`/${locale}/${cat.slug}`}
                     className="text-sm text-neutral-600 hover:text-neutral-900 transition-colors"
                   >
                     {cat.name}
@@ -65,9 +65,9 @@ export function Footer({ locale }: FooterProps) {
           <div>
             <h4 className="text-xs font-medium text-neutral-400 uppercase tracking-wider mb-4">{t.company}</h4>
             <ul className="space-y-3">
-              <li><Link href={`/${locale === 'en' ? '' : locale + '/'}about`} className="text-sm text-neutral-600 hover:text-neutral-900 transition-colors">{t.about}</Link></li>
-              <li><Link href={`/${locale === 'en' ? '' : locale + '/'}contacto`} className="text-sm text-neutral-600 hover:text-neutral-900 transition-colors">{t.contact}</Link></li>
-              <li><Link href={`/${locale === 'en' ? '' : locale + '/'}faq`} className="text-sm text-neutral-600 hover:text-neutral-900 transition-colors">{t.faq}</Link></li>
+              <li><Link href={`/${locale}/about`} className="text-sm text-neutral-600 hover:text-neutral-900 transition-colors">{t.about}</Link></li>
+              <li><Link href={`/${locale}/contacto`} className="text-sm text-neutral-600 hover:text-neutral-900 transition-colors">{t.contact}</Link></li>
+              <li><Link href={`/${locale}/faq`} className="text-sm text-neutral-600 hover:text-neutral-900 transition-colors">{t.faq}</Link></li>
             </ul>
           </div>
         </div>
@@ -78,13 +78,13 @@ export function Footer({ locale }: FooterProps) {
             © {new Date().getFullYear()} Luxe Interieur
           </p>
           <div className="flex items-center gap-6">
-            <Link href={`/${locale === 'en' ? '' : locale + '/'}privacidad`} className="text-xs text-neutral-400 hover:text-neutral-600 transition-colors">
+            <Link href={`/${locale}/privacidad`} className="text-xs text-neutral-400 hover:text-neutral-600 transition-colors">
               {t.privacy}
             </Link>
-            <Link href={`/${locale === 'en' ? '' : locale + '/'}terminos`} className="text-xs text-neutral-400 hover:text-neutral-600 transition-colors">
+            <Link href={`/${locale}/terminos`} className="text-xs text-neutral-400 hover:text-neutral-600 transition-colors">
               {t.terms}
             </Link>
-            <Link href={`/${locale === 'en' ? '' : locale + '/'}legal`} className="text-xs text-neutral-400 hover:text-neutral-600 transition-colors">
+            <Link href={`/${locale}/legal`} className="text-xs text-neutral-400 hover:text-neutral-600 transition-colors">
               {t.legal}
             </Link>
           </div>

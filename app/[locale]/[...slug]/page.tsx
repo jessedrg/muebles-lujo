@@ -20,7 +20,7 @@ const CATEGORIES = [
   { 
     slug: 'sofas-lujo',
     slugs: { es: 'sofas-lujo', en: 'luxury-sofas', de: 'luxus-sofas', fr: 'canapes-luxe', it: 'divani-lusso', pt: 'sofas-luxo', nl: 'luxe-banken', pl: 'luksusowe-sofy' },
-    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1470&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1577421759415-bba870669383?q=80&w=2671&auto=format&fit=crop',
     price: '3.500€',
     names: { es: 'Sofás de Lujo', en: 'Luxury Sofas', de: 'Luxus-Sofas', fr: 'Canapés de Luxe', it: 'Divani di Lusso', pt: 'Sofás de Luxo', nl: 'Luxe Banken', pl: 'Luksusowe Sofy' },
     desc: { 
@@ -37,7 +37,7 @@ const CATEGORIES = [
   { 
     slug: 'mesas-comedor',
     slugs: { es: 'mesas-comedor', en: 'dining-tables', de: 'esstische', fr: 'tables-salle-manger', it: 'tavoli-pranzo', pt: 'mesas-jantar', nl: 'eettafels', pl: 'stoly-jadalne' },
-    image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=1632&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1604578762246-41134e37f9cc?q=80&w=1335&auto=format&fit=crop',
     price: '2.800€',
     names: { es: 'Mesas de Comedor', en: 'Dining Tables', de: 'Esstische', fr: 'Tables à Manger', it: 'Tavoli da Pranzo', pt: 'Mesas de Jantar', nl: 'Eettafels', pl: 'Stoły Jadalne' },
     desc: { 
@@ -54,7 +54,7 @@ const CATEGORIES = [
   { 
     slug: 'sillones-diseno',
     slugs: { es: 'sillones-diseno', en: 'designer-armchairs', de: 'designer-sessel', fr: 'fauteuils-design', it: 'poltrone-design', pt: 'poltronas-design', nl: 'design-fauteuils', pl: 'fotele-designerskie' },
-    image: 'https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?q=80&w=1287&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1680773525486-3313809b1a14?q=80&w=1287&auto=format&fit=crop',
     price: '1.900€',
     names: { es: 'Sillones de Diseño', en: 'Designer Armchairs', de: 'Designer-Sessel', fr: 'Fauteuils Design', it: 'Poltrone di Design', pt: 'Poltronas de Design', nl: 'Design Fauteuils', pl: 'Fotele Designerskie' },
     desc: { 
@@ -71,7 +71,7 @@ const CATEGORIES = [
   { 
     slug: 'camas-premium',
     slugs: { es: 'camas-premium', en: 'premium-beds', de: 'premium-betten', fr: 'lits-premium', it: 'letti-premium', pt: 'camas-premium', nl: 'premium-bedden', pl: 'lozka-premium' },
-    image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1470&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1664538922512-127ff7e30aef?q=80&w=2274&auto=format&fit=crop',
     price: '4.200€',
     names: { es: 'Camas Premium', en: 'Premium Beds', de: 'Premium-Betten', fr: 'Lits Premium', it: 'Letti Premium', pt: 'Camas Premium', nl: 'Premium Bedden', pl: 'Łóżka Premium' },
     desc: { 
@@ -83,6 +83,40 @@ const CATEGORIES = [
       pt: 'Camas de luxo para um descanso sublime. Qualidade que perdura.',
       nl: 'Luxe bedden voor sublieme rust. Kwaliteit die blijft.',
       pl: 'Luksusowe łóżka dla wzniosłego odpoczynku. Jakość która trwa.'
+    }
+  },
+  { 
+    slug: 'aparadores',
+    slugs: { es: 'aparadores', en: 'sideboards', de: 'sideboards', fr: 'buffets', it: 'credenze', pt: 'aparadores', nl: 'dressoirs', pl: 'kredensy' },
+    image: 'https://www.tlcinteriors.com.au/wp-content/uploads/2016/07/ascot-parque-low-buffet-sideboards-on-the-life-creative.jpg',
+    price: '2.400€',
+    names: { es: 'Aparadores', en: 'Sideboards', de: 'Sideboards', fr: 'Buffets', it: 'Credenze', pt: 'Aparadores', nl: 'Dressoirs', pl: 'Kredensy' },
+    desc: { 
+      es: 'Aparadores de diseño exclusivo. Almacenamiento elegante para tu hogar.', 
+      en: 'Exclusive design sideboards. Elegant storage for your home.', 
+      de: 'Sideboards mit exklusivem Design. Elegante Aufbewahrung für Ihr Zuhause.', 
+      fr: 'Buffets au design exclusif. Rangement élégant pour votre maison.',
+      it: 'Credenze dal design esclusivo. Stoccaggio elegante per la tua casa.',
+      pt: 'Aparadores de design exclusivo. Arrumação elegante para a sua casa.',
+      nl: 'Dressoirs met exclusief design. Elegante opbergruimte voor uw huis.',
+      pl: 'Kredensy o ekskluzywnym designie. Eleganckie przechowywanie dla Twojego domu.'
+    }
+  },
+  { 
+    slug: 'muebles-exterior',
+    slugs: { es: 'muebles-exterior', en: 'outdoor-furniture', de: 'gartenmoebel', fr: 'mobilier-exterieur', it: 'mobili-esterno', pt: 'moveis-exterior', nl: 'tuinmeubelen', pl: 'meble-ogrodowe' },
+    image: 'https://images.unsplash.com/photo-1768725845307-f7e7f18e04b3?q=80&w=1287&auto=format&fit=crop',
+    price: '3.100€',
+    names: { es: 'Muebles de Exterior', en: 'Outdoor Furniture', de: 'Gartenmöbel', fr: 'Mobilier Extérieur', it: 'Mobili da Esterno', pt: 'Móveis de Exterior', nl: 'Tuinmeubelen', pl: 'Meble Ogrodowe' },
+    desc: { 
+      es: 'Mobiliario de exterior premium. Resistente y elegante para tu terraza.', 
+      en: 'Premium outdoor furniture. Durable and elegant for your terrace.', 
+      de: 'Premium-Gartenmöbel. Langlebig und elegant für Ihre Terrasse.', 
+      fr: 'Mobilier d\'extérieur premium. Résistant et élégant pour votre terrasse.',
+      it: 'Mobili da esterno premium. Resistenti ed eleganti per la tua terrazza.',
+      pt: 'Mobiliário de exterior premium. Resistente e elegante para a sua varanda.',
+      nl: 'Premium tuinmeubelen. Duurzaam en elegant voor uw terras.',
+      pl: 'Meble ogrodowe premium. Trwałe i eleganckie na Twój taras.'
     }
   },
 ];

@@ -46,7 +46,7 @@ export function Header({ locale, transparent = false }: HeaderProps) {
           <div className="flex h-14 items-center justify-between">
             {/* Logo */}
             <Link 
-              href={`/${locale === 'en' ? '' : locale}`} 
+              href={`/${locale}`} 
               className={cn(
                 "text-lg font-light tracking-wide transition-colors",
                 transparent ? "text-white" : "text-neutral-900"
@@ -60,7 +60,7 @@ export function Header({ locale, transparent = false }: HeaderProps) {
               {CATEGORIES.map((cat) => (
                 <Link 
                   key={cat.slug}
-                  href={`/${locale === 'en' ? '' : locale + '/'}${cat.slug}`} 
+                  href={`/${locale}/${cat.slug}`} 
                   className={cn(
                     "text-sm transition-colors",
                     transparent 
@@ -133,7 +133,7 @@ export function Header({ locale, transparent = false }: HeaderProps) {
             {CATEGORIES.map((cat) => (
               <Link 
                 key={cat.slug}
-                href={`/${locale === 'en' ? '' : locale + '/'}${cat.slug}`}
+                href={`/${locale}/${cat.slug}`}
                 onClick={() => setIsMenuOpen(false)}
                 className="block py-3 text-lg text-neutral-600 hover:text-neutral-900 transition-colors"
               >

@@ -10,7 +10,7 @@ interface CategoriesProps {
 const CATEGORIES = [
   { 
     slug: 'sofas-lujo',
-    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1470&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1577421759415-bba870669383?q=80&w=2671&auto=format&fit=crop',
     price: '3.500€',
     names: { es: 'Sofás de Lujo', en: 'Luxury Sofas', de: 'Luxus-Sofas', fr: 'Canapés de Luxe', it: 'Divani di Lusso', pt: 'Sofás de Luxo', nl: 'Luxe Banken', pl: 'Luksusowe Sofy' },
     desc: { es: 'Confort excepcional', en: 'Exceptional comfort', de: 'Außergewöhnlicher Komfort', fr: 'Confort exceptionnel', it: 'Comfort eccezionale', pt: 'Conforto excepcional', nl: 'Uitzonderlijk comfort', pl: 'Wyjątkowy komfort' },
@@ -18,7 +18,7 @@ const CATEGORIES = [
   },
   { 
     slug: 'mesas-comedor',
-    image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=1632&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1604578762246-41134e37f9cc?q=80&w=1335&auto=format&fit=crop',
     price: '2.800€',
     names: { es: 'Mesas de Comedor', en: 'Dining Tables', de: 'Esstische', fr: 'Tables à Manger', it: 'Tavoli da Pranzo', pt: 'Mesas de Jantar', nl: 'Eettafels', pl: 'Stoły Jadalne' },
     desc: { es: 'Elegancia artesanal', en: 'Artisan elegance', de: 'Handwerkliche Eleganz', fr: 'Élégance artisanale', it: 'Eleganza artigianale', pt: 'Elegância artesanal', nl: 'Ambachtelijke elegantie', pl: 'Rzemieślnicza elegancja' },
@@ -26,7 +26,7 @@ const CATEGORIES = [
   },
   { 
     slug: 'sillones-diseno',
-    image: 'https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?q=80&w=1287&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1680773525486-3313809b1a14?q=80&w=1287&auto=format&fit=crop',
     price: '1.900€',
     names: { es: 'Sillones de Diseño', en: 'Designer Armchairs', de: 'Designer-Sessel', fr: 'Fauteuils Design', it: 'Poltrone di Design', pt: 'Poltronas de Design', nl: 'Design Fauteuils', pl: 'Fotele Designerskie' },
     desc: { es: 'Diseño icónico', en: 'Iconic design', de: 'Ikonisches Design', fr: 'Design iconique', it: 'Design iconico', pt: 'Design icónico', nl: 'Iconisch design', pl: 'Kultowy design' },
@@ -34,7 +34,7 @@ const CATEGORIES = [
   },
   { 
     slug: 'camas-premium',
-    image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1470&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1664538922512-127ff7e30aef?q=80&w=2274&auto=format&fit=crop',
     price: '4.200€',
     names: { es: 'Camas Premium', en: 'Premium Beds', de: 'Premium-Betten', fr: 'Lits Premium', it: 'Letti Premium', pt: 'Camas Premium', nl: 'Premium Bedden', pl: 'Łóżka Premium' },
     desc: { es: 'Descanso sublime', en: 'Sublime rest', de: 'Erhabene Ruhe', fr: 'Repos sublime', it: 'Riposo sublime', pt: 'Descanso sublime', nl: 'Sublieme rust', pl: 'Wzniosły odpoczynek' },
@@ -42,7 +42,7 @@ const CATEGORIES = [
   },
   { 
     slug: 'aparadores',
-    image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=1287&auto=format&fit=crop',
+    image: 'https://www.tlcinteriors.com.au/wp-content/uploads/2016/07/ascot-parque-low-buffet-sideboards-on-the-life-creative.jpg',
     price: '2.400€',
     names: { es: 'Aparadores', en: 'Sideboards', de: 'Sideboards', fr: 'Buffets', it: 'Credenze', pt: 'Aparadores', nl: 'Dressoirs', pl: 'Kredensy' },
     desc: { es: 'Almacenaje elegante', en: 'Elegant storage', de: 'Elegante Aufbewahrung', fr: 'Rangement élégant', it: 'Stoccaggio elegante', pt: 'Armazenamento elegante', nl: 'Elegante opberging', pl: 'Eleganckie przechowywanie' },
@@ -50,7 +50,7 @@ const CATEGORIES = [
   },
   { 
     slug: 'muebles-exterior',
-    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1374&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1768725845307-f7e7f18e04b3?q=80&w=1287&auto=format&fit=crop',
     price: '3.100€',
     names: { es: 'Muebles Exterior', en: 'Outdoor Furniture', de: 'Gartenmöbel', fr: 'Mobilier Extérieur', it: 'Mobili da Esterno', pt: 'Móveis Exterior', nl: 'Tuinmeubelen', pl: 'Meble Ogrodowe' },
     desc: { es: 'Lujo al aire libre', en: 'Outdoor luxury', de: 'Luxus im Freien', fr: 'Luxe en plein air', it: 'Lusso all\'aperto', pt: 'Luxo ao ar livre', nl: 'Luxe buiten', pl: 'Luksus na zewnątrz' },
@@ -90,7 +90,7 @@ export function Categories({ locale }: CategoriesProps) {
           {featuredCats.map((cat) => (
             <Link 
               key={cat.slug}
-              href={`/${locale === 'en' ? '' : locale + '/'}${cat.slug}`}
+              href={`/${locale}/${cat.slug}`}
               className="group relative bg-white overflow-hidden"
             >
               {/* Image */}
@@ -130,7 +130,7 @@ export function Categories({ locale }: CategoriesProps) {
           {regularCats.map((cat) => (
             <Link 
               key={cat.slug}
-              href={`/${locale === 'en' ? '' : locale + '/'}${cat.slug}`}
+              href={`/${locale}/${cat.slug}`}
               className="group"
             >
               {/* Image */}
