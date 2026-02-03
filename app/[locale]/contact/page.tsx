@@ -37,7 +37,7 @@ const CONTACT_CONTENT: Record<string, {
     hero: {
       eyebrow: "Get in Touch",
       title: "We're here to help",
-      subtitle: "Have questions about our products or need guidance? Our team of Sauna experts is ready to assist you."
+      subtitle: "Have questions about our furniture or need design guidance? Our team of interior experts is ready to assist you."
     },
     form: {
       title: "Send us a message",
@@ -52,16 +52,16 @@ const CONTACT_CONTENT: Record<string, {
     },
     info: {
       title: "Contact Information",
-      email: { label: "Email", value: "hello@saunaspa.io" },
-      phone: { label: "Phone", value: "+41 800 123 456" },
-      address: { label: "Address", value: "Bahnhofstrasse 42, 8001 Zürich, Switzerland" }
+      email: { label: "Email", value: "hello@luxeinterieur.io" },
+      phone: { label: "Phone", value: "+34 900 123 456" },
+      address: { label: "Address", value: "Paseo de Gracia 42, 08007 Barcelona, Spain" }
     },
     faq: {
       title: "Common Questions",
       items: [
-        { q: "What is your shipping policy?", a: "We offer free discreet shipping on orders over €50. Standard delivery takes 2-4 business days across Europe." },
-        { q: "Are your products legal?", a: "All our products contain less than 0.2% THC and are fully compliant with EU regulations." },
-        { q: "Do you offer returns?", a: "Yes, we offer a 30-day satisfaction guarantee on all unopened products." }
+        { q: "What is your delivery policy?", a: "We offer free delivery and installation on all orders. Standard delivery takes 2-4 weeks across Europe." },
+        { q: "Do you offer bespoke design?", a: "Yes, all our furniture can be customized to your specifications. Contact us for a design consultation." },
+        { q: "What is your warranty?", a: "We offer a 10-year warranty on all our furniture pieces." }
       ]
     }
   },
@@ -69,7 +69,7 @@ const CONTACT_CONTENT: Record<string, {
     hero: {
       eyebrow: "Contáctanos",
       title: "Estamos aquí para ayudarte",
-      subtitle: "¿Tienes preguntas sobre nuestros productos o necesitas orientación? Nuestro equipo de expertos en Sauna está listo para asistirte."
+      subtitle: "¿Tienes preguntas sobre nuestros muebles o necesitas asesoramiento de diseño? Nuestro equipo de expertos en interiorismo está listo para asistirte."
     },
     form: {
       title: "Envíanos un mensaje",
@@ -84,16 +84,16 @@ const CONTACT_CONTENT: Record<string, {
     },
     info: {
       title: "Información de Contacto",
-      email: { label: "Email", value: "hola@saunaspa.io" },
-      phone: { label: "Teléfono", value: "+41 800 123 456" },
-      address: { label: "Dirección", value: "Bahnhofstrasse 42, 8001 Zürich, Suiza" }
+      email: { label: "Email", value: "hola@luxeinterieur.io" },
+      phone: { label: "Teléfono", value: "+34 900 123 456" },
+      address: { label: "Dirección", value: "Paseo de Gracia 42, 08007 Barcelona, España" }
     },
     faq: {
       title: "Preguntas Frecuentes",
       items: [
-        { q: "¿Cuál es su política de envío?", a: "Ofrecemos envío discreto gratuito en pedidos superiores a 50€. La entrega estándar tarda 2-4 días laborables en Europa." },
-        { q: "¿Son legales sus productos?", a: "Todos nuestros productos contienen menos del 0.2% de THC y cumplen con las regulaciones de la UE." },
-        { q: "¿Ofrecen devoluciones?", a: "Sí, ofrecemos garantía de satisfacción de 30 días en todos los productos sin abrir." }
+        { q: "¿Cuál es su política de entrega?", a: "Ofrecemos entrega e instalación gratuita en todos los pedidos. La entrega estándar tarda 2-4 semanas en Europa." },
+        { q: "¿Ofrecen diseño a medida?", a: "Sí, todos nuestros muebles pueden personalizarse según tus especificaciones. Contáctanos para una consulta de diseño." },
+        { q: "¿Cuál es su garantía?", a: "Ofrecemos garantía de 10 años en todas nuestras piezas de mobiliario." }
       ]
     }
   },
@@ -101,7 +101,7 @@ const CONTACT_CONTENT: Record<string, {
     hero: {
       eyebrow: "Kontakt",
       title: "Wir sind für Sie da",
-      subtitle: "Haben Sie Fragen zu unseren Produkten? Unser Sauna-Expertenteam hilft Ihnen gerne."
+      subtitle: "Haben Sie Fragen zu unseren Möbeln oder benötigen Sie Designberatung? Unser Expertenteam für Inneneinrichtung hilft Ihnen gerne."
     },
     form: {
       title: "Nachricht senden",
@@ -116,16 +116,16 @@ const CONTACT_CONTENT: Record<string, {
     },
     info: {
       title: "Kontaktinformationen",
-      email: { label: "E-Mail", value: "hallo@saunaspa.io" },
-      phone: { label: "Telefon", value: "+41 800 123 456" },
-      address: { label: "Adresse", value: "Bahnhofstrasse 42, 8001 Zürich, Schweiz" }
+      email: { label: "E-Mail", value: "hallo@luxeinterieur.io" },
+      phone: { label: "Telefon", value: "+34 900 123 456" },
+      address: { label: "Adresse", value: "Paseo de Gracia 42, 08007 Barcelona, Spanien" }
     },
     faq: {
       title: "Häufige Fragen",
       items: [
-        { q: "Wie ist Ihre Versandpolitik?", a: "Kostenloser diskreter Versand ab 50€. Standardlieferung dauert 2-4 Werktage in Europa." },
-        { q: "Sind Ihre Produkte legal?", a: "Alle unsere Produkte enthalten weniger als 0,2% THC und entsprechen den EU-Vorschriften." },
-        { q: "Bieten Sie Rückgaben an?", a: "Ja, 30 Tage Zufriedenheitsgarantie auf alle ungeöffneten Produkte." }
+        { q: "Wie ist Ihre Lieferpolitik?", a: "Kostenlose Lieferung und Montage bei allen Bestellungen. Standardlieferung dauert 2-4 Wochen in Europa." },
+        { q: "Bieten Sie Maßanfertigung an?", a: "Ja, alle unsere Möbel können nach Ihren Wünschen angepasst werden. Kontaktieren Sie uns für eine Designberatung." },
+        { q: "Was ist Ihre Garantie?", a: "Wir bieten 10 Jahre Garantie auf alle unsere Möbelstücke." }
       ]
     }
   },
@@ -133,7 +133,7 @@ const CONTACT_CONTENT: Record<string, {
     hero: {
       eyebrow: "Contactez-nous",
       title: "Nous sommes là pour vous aider",
-      subtitle: "Des questions sur nos produits? Notre équipe d'experts Sauna est prête à vous assister."
+      subtitle: "Des questions sur nos meubles ou besoin de conseils en design? Notre équipe d'experts en décoration intérieure est prête à vous assister."
     },
     form: {
       title: "Envoyez-nous un message",
@@ -148,16 +148,16 @@ const CONTACT_CONTENT: Record<string, {
     },
     info: {
       title: "Informations de Contact",
-      email: { label: "Email", value: "bonjour@saunaspa.io" },
-      phone: { label: "Téléphone", value: "+41 800 123 456" },
-      address: { label: "Adresse", value: "Bahnhofstrasse 42, 8001 Zürich, Suisse" }
+      email: { label: "Email", value: "bonjour@luxeinterieur.io" },
+      phone: { label: "Téléphone", value: "+34 900 123 456" },
+      address: { label: "Adresse", value: "Paseo de Gracia 42, 08007 Barcelone, Espagne" }
     },
     faq: {
       title: "Questions Fréquentes",
       items: [
-        { q: "Quelle est votre politique de livraison?", a: "Livraison discrète gratuite dès 50€. Délai standard de 2-4 jours ouvrés en Europe." },
-        { q: "Vos produits sont-ils légaux?", a: "Tous nos produits contiennent moins de 0,2% de THC et sont conformes aux réglementations UE." },
-        { q: "Proposez-vous des retours?", a: "Oui, garantie satisfaction 30 jours sur tous les produits non ouverts." }
+        { q: "Quelle est votre politique de livraison?", a: "Livraison et installation gratuites sur toutes les commandes. Délai standard de 2-4 semaines en Europe." },
+        { q: "Proposez-vous du design sur mesure?", a: "Oui, tous nos meubles peuvent être personnalisés selon vos spécifications. Contactez-nous pour une consultation design." },
+        { q: "Quelle est votre garantie?", a: "Nous offrons une garantie de 10 ans sur toutes nos pièces de mobilier." }
       ]
     }
   }

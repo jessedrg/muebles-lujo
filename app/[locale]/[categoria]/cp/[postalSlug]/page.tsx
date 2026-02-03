@@ -88,7 +88,7 @@ export default async function PostalCodePage({ params }: PageProps) {
   const catName = category.translations[validLocale as keyof typeof category.translations] || category.translations.en;
   const catImage = category.image;
 
-  // SEO Data for Sauna Spa
+  // SEO Data for Luxe Interieur
   const seoData: PostalSEOProps = {
     locale: validLocale,
     product: catName,
@@ -98,9 +98,9 @@ export default async function PostalCodePage({ params }: PageProps) {
     region: postalData.region,
     priceMin: category.priceRange.min,
     priceMax: category.priceRange.max,
-    brand: 'Sauna Spa',
-    domain: 'saunaspa.io',
-    warranty: '5 años',
+    brand: 'Luxe Interieur',
+    domain: 'luxeinterieur.io',
+    warranty: '10 años',
   };
 
   // Price table products
@@ -117,14 +117,14 @@ export default async function PostalCodePage({ params }: PageProps) {
     .slice(0, 6);
 
   const t: Record<string, Record<string, string>> = {
-    es: { from: 'Desde', quote: 'Presupuesto Gratis', warranty: '5 años garantía', quality: 'Calidad premium', delivery: 'Instalación incluida', nearby: 'Zonas cercanas', otherProducts: 'Otros productos', viewAll: 'Ver catálogo' },
-    en: { from: 'From', quote: 'Free Quote', warranty: '5 year warranty', quality: 'Premium quality', delivery: 'Installation included', nearby: 'Nearby areas', otherProducts: 'Other products', viewAll: 'View catalog' },
-    de: { from: 'Ab', quote: 'Kostenloses Angebot', warranty: '5 Jahre Garantie', quality: 'Premium Qualität', delivery: 'Installation inklusive', nearby: 'Nahe Gebiete', otherProducts: 'Andere Produkte', viewAll: 'Katalog ansehen' },
-    fr: { from: 'À partir de', quote: 'Devis Gratuit', warranty: 'Garantie 5 ans', quality: 'Qualité premium', delivery: 'Installation incluse', nearby: 'Zones proches', otherProducts: 'Autres produits', viewAll: 'Voir catalogue' },
-    it: { from: 'Da', quote: 'Preventivo Gratuito', warranty: 'Garanzia 5 anni', quality: 'Qualità premium', delivery: 'Installazione inclusa', nearby: 'Zone vicine', otherProducts: 'Altri prodotti', viewAll: 'Vedi catalogo' },
-    pt: { from: 'Desde', quote: 'Orçamento Grátis', warranty: 'Garantia 5 anos', quality: 'Qualidade premium', delivery: 'Instalação incluída', nearby: 'Zonas próximas', otherProducts: 'Outros produtos', viewAll: 'Ver catálogo' },
-    nl: { from: 'Vanaf', quote: 'Gratis Offerte', warranty: '5 jaar garantie', quality: 'Premium kwaliteit', delivery: 'Installatie inbegrepen', nearby: 'Nabijgelegen gebieden', otherProducts: 'Andere producten', viewAll: 'Bekijk catalogus' },
-    pl: { from: 'Od', quote: 'Darmowa Wycena', warranty: 'Gwarancja 5 lat', quality: 'Jakość premium', delivery: 'Instalacja w cenie', nearby: 'Pobliskie obszary', otherProducts: 'Inne produkty', viewAll: 'Zobacz katalog' },
+    es: { from: 'Desde', quote: 'Solicitar Proyecto', warranty: '10 años garantía', quality: 'Calidad artesanal', delivery: 'Entrega incluida', nearby: 'Zonas cercanas', otherProducts: 'Otras colecciones', viewAll: 'Ver colecciones' },
+    en: { from: 'From', quote: 'Request Project', warranty: '10 year warranty', quality: 'Artisan quality', delivery: 'Delivery included', nearby: 'Nearby areas', otherProducts: 'Other collections', viewAll: 'View collections' },
+    de: { from: 'Ab', quote: 'Projekt Anfragen', warranty: '10 Jahre Garantie', quality: 'Handwerksqualität', delivery: 'Lieferung inklusive', nearby: 'Nahe Gebiete', otherProducts: 'Andere Kollektionen', viewAll: 'Kollektionen ansehen' },
+    fr: { from: 'À partir de', quote: 'Demander Projet', warranty: 'Garantie 10 ans', quality: 'Qualité artisanale', delivery: 'Livraison incluse', nearby: 'Zones proches', otherProducts: 'Autres collections', viewAll: 'Voir collections' },
+    it: { from: 'Da', quote: 'Richiedi Progetto', warranty: 'Garanzia 10 anni', quality: 'Qualità artigianale', delivery: 'Consegna inclusa', nearby: 'Zone vicine', otherProducts: 'Altre collezioni', viewAll: 'Vedi collezioni' },
+    pt: { from: 'Desde', quote: 'Solicitar Projeto', warranty: 'Garantia 10 anos', quality: 'Qualidade artesanal', delivery: 'Entrega incluída', nearby: 'Zonas próximas', otherProducts: 'Outras coleções', viewAll: 'Ver coleções' },
+    nl: { from: 'Vanaf', quote: 'Project Aanvragen', warranty: '10 jaar garantie', quality: 'Ambachtelijke kwaliteit', delivery: 'Levering inbegrepen', nearby: 'Nabijgelegen gebieden', otherProducts: 'Andere collecties', viewAll: 'Bekijk collecties' },
+    pl: { from: 'Od', quote: 'Zamów Projekt', warranty: 'Gwarancja 10 lat', quality: 'Jakość rzemieślnicza', delivery: 'Dostawa w cenie', nearby: 'Pobliskie obszary', otherProducts: 'Inne kolekcje', viewAll: 'Zobacz kolekcje' },
   };
   const texts = t[validLocale] || t.es;
 
@@ -134,7 +134,7 @@ export default async function PostalCodePage({ params }: PageProps) {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-neutral-100">
         <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
           <Link href={`/${locale}`} className="text-lg font-light tracking-wide text-neutral-900">
-            Sauna Spa
+            Luxe Interieur
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm text-neutral-500">
             {PRODUCT_CATEGORIES.slice(0, 4).map(cat => (
