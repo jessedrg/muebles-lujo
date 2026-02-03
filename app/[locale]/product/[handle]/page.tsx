@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!product) {
     return {
-      title: "Product Not Found | SaunaSpa.io",
+      title: "Product Not Found | Luxe Interieur",
     };
   }
 
@@ -37,22 +37,22 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const imageUrl = product.images?.edges?.[0]?.node?.url;
 
   return {
-    title: `${translated.title} | SaunaSpa.io`,
-    description: translated.description?.slice(0, 160) || `Buy ${translated.title} at SaunaSpa.io`,
+    title: `${translated.title} | Luxe Interieur`,
+    description: translated.description?.slice(0, 160) || `Buy ${translated.title} at Luxe Interieur`,
     alternates: {
       canonical: `/${locale}/product/${handle}`,
     },
     openGraph: {
-      title: `${translated.title} | SaunaSpa.io`,
+      title: `${translated.title} | Luxe Interieur`,
       description: translated.description?.slice(0, 160),
       url: `/${locale}/product/${handle}`,
-      siteName: "SaunaSpa.io",
+      siteName: "Luxe Interieur",
       type: "website",
       images: imageUrl ? [{ url: imageUrl, width: 1200, height: 630, alt: translated.title }] : [],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${translated.title} | SaunaSpa.io`,
+      title: `${translated.title} | Luxe Interieur`,
       description: translated.description?.slice(0, 160),
       images: imageUrl ? [imageUrl] : [],
     },

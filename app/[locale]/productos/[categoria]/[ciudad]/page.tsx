@@ -47,7 +47,7 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale, categoria, ciudad } = await params
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://saunasyspas.com"
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://luxeinterieur.io"
 
   const category = getCategoryBySlug(categoria)
   const city = getCityBySlug(ciudad)

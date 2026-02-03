@@ -27,7 +27,7 @@ interface PageProps {
   params: Promise<{ locale: string; categoria: string; postalSlug: string }>
 }
 
-const SITE_URL = "https://saunaspa.io";
+const SITE_URL = "https://luxeinterieur.io";
 
 // Dynamic metadata for postal code pages
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -43,10 +43,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!postalData || !category) return { title: 'Not Found' };
   
   const catName = category.translations[validLocale as keyof typeof category.translations] || category.translations.en;
-  const ogImage = category.image ? `${category.image.split('?')[0]}?w=1200&h=630&fit=crop&q=80` : 'https://images.unsplash.com/photo-1655194911126-6032bdcccc9d?w=1200&h=630&fit=crop&q=80';
+  const ogImage = category.image ? `${category.image.split('?')[0]}?w=1200&h=630&fit=crop&q=80` : 'https://images.unsplash.com/photo-1577421759415-bba870669383?w=1200&h=630&fit=crop&q=80';
   
-  const title = `${catName} en ${postalData.name} | Sauna Spa`;
-  const description = `${catName} en ${postalData.name} (${parsed.postalCode}). Garantía 5 años, instalación profesional incluida en ${postalData.region}.`;
+  const title = `${catName} en ${postalData.name} | Luxe Interieur`;
+  const description = `${catName} en ${postalData.name} (${parsed.postalCode}). Garantía 10 años, entrega e instalación incluida en ${postalData.region}.`;
   const canonicalUrl = `${SITE_URL}/${locale}/${categoria}/cp/${postalSlug}`;
 
   return {
@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title,
       description,
       url: canonicalUrl,
-      siteName: 'Sauna Spa',
+      siteName: 'Luxe Interieur',
       locale: locale === 'es' ? 'es_ES' : locale === 'en' ? 'en_US' : `${locale}_${locale.toUpperCase()}`,
       type: 'website',
       images: [{ url: ogImage, width: 1200, height: 630, alt: `${catName} en ${postalData.name}` }],
