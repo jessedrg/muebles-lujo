@@ -273,6 +273,14 @@ export default async function DynamicPage({ params }: PageProps) {
           </div>
         </section>
 
+        {/* Shopify Products - Right after hero */}
+        <ShopifyProducts 
+          locale={validLocale} 
+          collection={category?.slug} 
+          title={catName}
+          limit={8}
+        />
+
         {/* Luxury Features Bar */}
         <section className="py-20 bg-white border-b border-neutral-100">
           <div className="max-w-7xl mx-auto px-6 lg:px-12">
@@ -344,14 +352,6 @@ export default async function DynamicPage({ params }: PageProps) {
             </div>
           </div>
         </section>
-
-        {/* Shopify Products */}
-        <ShopifyProducts 
-          locale={validLocale} 
-          collection={category?.slug} 
-          title={catName}
-          limit={8}
-        />
 
         {/* Related Collections - Luxury Grid */}
         <section className="py-32 bg-white">
