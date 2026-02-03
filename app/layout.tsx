@@ -17,19 +17,19 @@ const cormorant = Cormorant_Garamond({
   display: 'swap'
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://saunaspa.io';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://luxeinterieur.io';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Sauna Spa | Saunas Finlandesas y Jacuzzis para Casa',
-    template: '%s | Sauna Spa',
+    default: 'Luxe Interieur | Muebles de Lujo para tu Hogar',
+    template: '%s | Luxe Interieur',
   },
-  description: 'Saunas finlandesas, jacuzzis exterior y spas para tu hogar. Garantía 5 años. Presupuesto sin compromiso.',
-  keywords: ['sauna finlandesa', 'jacuzzi exterior', 'spa casa', 'sauna casa precio', 'jacuzzi precio', 'bañera hidromasaje', 'cabina infrarrojos', 'spa hinchable'],
-  authors: [{ name: 'Sauna Spa' }],
-  creator: 'Sauna Spa',
-  publisher: 'Sauna Spa',
+  description: 'Muebles de lujo artesanales. Sofás, mesas, camas y sillones de diseño. Fabricación europea, garantía 10 años. Entrega e instalación incluida.',
+  keywords: ['muebles de lujo', 'sofás de diseño', 'mesas de comedor', 'camas premium', 'sillones de diseño', 'muebles artesanales', 'mobiliario de lujo', 'decoración de interiores'],
+  authors: [{ name: 'Luxe Interieur' }],
+  creator: 'Luxe Interieur',
+  publisher: 'Luxe Interieur',
   formatDetection: {
     email: false,
     address: false,
@@ -49,24 +49,24 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'es_ES',
     url: SITE_URL,
-    siteName: 'Sauna Spa',
-    title: 'Sauna Spa | Saunas Finlandesas y Jacuzzis para Casa',
-    description: 'Saunas finlandesas, jacuzzis exterior y spas para tu hogar. Garantía 5 años.',
+    siteName: 'Luxe Interieur',
+    title: 'Luxe Interieur | Muebles de Lujo para tu Hogar',
+    description: 'Muebles de lujo artesanales. Sofás, mesas, camas y sillones de diseño. Fabricación europea, garantía 10 años.',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1655194911126-6032bdcccc9d?w=1200&h=630&fit=crop&q=80',
+        url: 'https://images.unsplash.com/photo-1577421759415-bba870669383?w=1200&h=630&fit=crop&q=80',
         width: 1200,
         height: 630,
-        alt: 'Sauna Spa - Saunas Finlandesas y Jacuzzis para Casa',
+        alt: 'Luxe Interieur - Muebles de Lujo para tu Hogar',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sauna Spa | Saunas Finlandesas y Jacuzzis',
-    description: 'Saunas finlandesas, jacuzzis y spas para tu hogar.',
-    images: ['https://images.unsplash.com/photo-1655194911126-6032bdcccc9d?w=1200&h=630&fit=crop&q=80'],
-    creator: '@saunaspaio',
+    title: 'Luxe Interieur | Muebles de Lujo',
+    description: 'Muebles de lujo artesanales para tu hogar.',
+    images: ['https://images.unsplash.com/photo-1577421759415-bba870669383?w=1200&h=630&fit=crop&q=80'],
+    creator: '@luxeinterieur',
   },
   robots: {
     index: true,

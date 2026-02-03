@@ -818,93 +818,93 @@ export const TRANSLATIONS: Record<Locale, {
   nav: { home: string; shop: string; about: string; contact: string };
 }> = {
   es: {
-    hero: { title: 'SaunaSpa.io\npara tu Hogar', subtitle: 'Saunas finlandesas, jacuzzis y spas de la más alta calidad. Instalación profesional, garantía incluida.', cta: 'Ver Catálogo' },
-    features: { quality: 'Calidad Premium', qualityDesc: 'Maderas nobles y materiales de primera calidad', shipping: 'Envío e Instalación', shippingDesc: 'Entrega e instalación profesional incluida', support: 'Asesoría Experta', supportDesc: 'Te ayudamos a elegir el modelo perfecto', lab: 'Garantía 5 Años', labDesc: 'Garantía completa en todos los productos' },
-    products: { title: 'Nuestra Selección', viewAll: 'Ver Todo' },
-    categories: { title: 'Categorías' },
-    cta: { title: 'Tu Oasis de Bienestar en Casa', subtitle: 'Únete a miles de hogares que ya disfrutan', button: 'Solicitar Presupuesto' },
+    hero: { title: 'Muebles de Lujo\npara tu Hogar', subtitle: 'Mobiliario artesanal de alta gama. Fabricación europea, entrega e instalación incluida. Garantía 10 años.', cta: 'Ver Colecciones' },
+    features: { quality: 'Calidad Artesanal', qualityDesc: 'Materiales nobles y acabados impecables', shipping: 'Entrega e Instalación', shippingDesc: 'Servicio completo en toda Europa', support: 'Diseño a Medida', supportDesc: 'Personalizamos cada pieza para ti', lab: 'Garantía 10 Años', labDesc: 'Calidad que perdura generaciones' },
+    products: { title: 'Colecciones Destacadas', viewAll: 'Ver Todo' },
+    categories: { title: 'Colecciones' },
+    cta: { title: 'Transforma tu Hogar', subtitle: 'Piezas únicas para espacios extraordinarios', button: 'Solicitar Proyecto' },
     footer: { about: 'Sobre Nosotros', contact: 'Contacto', legal: 'Aviso Legal', privacy: 'Privacidad', terms: 'Términos' },
-    nav: { home: 'Inicio', shop: 'Catálogo', about: 'Nosotros', contact: 'Contacto' }
+    nav: { home: 'Inicio', shop: 'Colecciones', about: 'Nosotros', contact: 'Contacto' }
   },
   en: {
-    hero: { title: 'Saunas & Spas\nfor Your Home', subtitle: 'Finnish saunas, hot tubs and spas of the highest quality. Professional installation, warranty included.', cta: 'View Catalog' },
-    features: { quality: 'Premium Quality', qualityDesc: 'Noble woods and first-class materials', shipping: 'Delivery & Installation', shippingDesc: 'Professional delivery and installation included', support: 'Expert Guidance', supportDesc: 'We help you choose the perfect model', lab: '5 Year Warranty', labDesc: 'Full warranty on all products' },
-    products: { title: 'Our Selection', viewAll: 'View All' },
-    categories: { title: 'Categories' },
-    cta: { title: 'Your Wellness Oasis at Home', subtitle: 'Join thousands of homes already enjoying', button: 'Request Quote' },
+    hero: { title: 'Luxury Furniture\nfor Your Home', subtitle: 'High-end artisan furniture. European craftsmanship, delivery and installation included. 10 year warranty.', cta: 'View Collections' },
+    features: { quality: 'Artisan Quality', qualityDesc: 'Noble materials and impeccable finishes', shipping: 'Delivery & Installation', shippingDesc: 'Complete service across Europe', support: 'Bespoke Design', supportDesc: 'We customize each piece for you', lab: '10 Year Warranty', labDesc: 'Quality that lasts generations' },
+    products: { title: 'Featured Collections', viewAll: 'View All' },
+    categories: { title: 'Collections' },
+    cta: { title: 'Transform Your Home', subtitle: 'Unique pieces for extraordinary spaces', button: 'Request Project' },
     footer: { about: 'About Us', contact: 'Contact', legal: 'Legal Notice', privacy: 'Privacy', terms: 'Terms' },
-    nav: { home: 'Home', shop: 'Catalog', about: 'About', contact: 'Contact' }
+    nav: { home: 'Home', shop: 'Collections', about: 'About', contact: 'Contact' }
   },
   de: {
-    hero: { title: 'Saunas & Spas\nfür Ihr Zuhause', subtitle: 'Finnische Saunas, Whirlpools und Spas höchster Qualität. Professionelle Installation, Garantie inklusive.', cta: 'Katalog Ansehen' },
-    features: { quality: 'Premium Qualität', qualityDesc: 'Edle Hölzer und erstklassige Materialien', shipping: 'Lieferung & Montage', shippingDesc: 'Professionelle Lieferung und Montage inklusive', support: 'Expertenberatung', supportDesc: 'Wir helfen Ihnen das perfekte Modell zu wählen', lab: '5 Jahre Garantie', labDesc: 'Volle Garantie auf alle Produkte' },
-    products: { title: 'Unsere Auswahl', viewAll: 'Alle Anzeigen' },
-    categories: { title: 'Kategorien' },
-    cta: { title: 'Ihre Wellness-Oase zu Hause', subtitle: 'Schließen Sie sich tausenden zufriedenen Haushalten an', button: 'Angebot Anfordern' },
+    hero: { title: 'Luxusmöbel\nfür Ihr Zuhause', subtitle: 'Hochwertige handgefertigte Möbel. Europäische Handwerkskunst, Lieferung und Montage inklusive. 10 Jahre Garantie.', cta: 'Kollektionen Ansehen' },
+    features: { quality: 'Handwerksqualität', qualityDesc: 'Edle Materialien und makellose Verarbeitung', shipping: 'Lieferung & Montage', shippingDesc: 'Kompletter Service in ganz Europa', support: 'Maßanfertigung', supportDesc: 'Wir passen jedes Stück für Sie an', lab: '10 Jahre Garantie', labDesc: 'Qualität die Generationen überdauert' },
+    products: { title: 'Ausgewählte Kollektionen', viewAll: 'Alle Anzeigen' },
+    categories: { title: 'Kollektionen' },
+    cta: { title: 'Verwandeln Sie Ihr Zuhause', subtitle: 'Einzigartige Stücke für außergewöhnliche Räume', button: 'Projekt Anfragen' },
     footer: { about: 'Über Uns', contact: 'Kontakt', legal: 'Impressum', privacy: 'Datenschutz', terms: 'AGB' },
-    nav: { home: 'Startseite', shop: 'Katalog', about: 'Über Uns', contact: 'Kontakt' }
+    nav: { home: 'Startseite', shop: 'Kollektionen', about: 'Über Uns', contact: 'Kontakt' }
   },
   fr: {
-    hero: { title: 'Saunas & Spas\npour Votre Maison', subtitle: 'Saunas finlandais, jacuzzis et spas de la plus haute qualité. Installation professionnelle, garantie incluse.', cta: 'Voir le Catalogue' },
-    features: { quality: 'Qualité Premium', qualityDesc: 'Bois nobles et matériaux de première qualité', shipping: 'Livraison & Installation', shippingDesc: 'Livraison et installation professionnelle incluses', support: 'Conseil Expert', supportDesc: 'Nous vous aidons à choisir le modèle parfait', lab: 'Garantie 5 Ans', labDesc: 'Garantie complète sur tous les produits' },
-    products: { title: 'Notre Sélection', viewAll: 'Voir Tout' },
-    categories: { title: 'Catégories' },
-    cta: { title: 'Votre Oasis de Bien-être à la Maison', subtitle: 'Rejoignez des milliers de foyers satisfaits', button: 'Demander un Devis' },
+    hero: { title: 'Mobilier de Luxe\npour Votre Maison', subtitle: 'Mobilier artisanal haut de gamme. Fabrication européenne, livraison et installation incluses. Garantie 10 ans.', cta: 'Voir les Collections' },
+    features: { quality: 'Qualité Artisanale', qualityDesc: 'Matériaux nobles et finitions impeccables', shipping: 'Livraison & Installation', shippingDesc: 'Service complet dans toute l\'Europe', support: 'Design Sur Mesure', supportDesc: 'Nous personnalisons chaque pièce pour vous', lab: 'Garantie 10 Ans', labDesc: 'Qualité qui traverse les générations' },
+    products: { title: 'Collections Vedettes', viewAll: 'Voir Tout' },
+    categories: { title: 'Collections' },
+    cta: { title: 'Transformez Votre Maison', subtitle: 'Pièces uniques pour des espaces extraordinaires', button: 'Demander un Projet' },
     footer: { about: 'À Propos', contact: 'Contact', legal: 'Mentions Légales', privacy: 'Confidentialité', terms: 'CGV' },
-    nav: { home: 'Accueil', shop: 'Catalogue', about: 'À Propos', contact: 'Contact' }
+    nav: { home: 'Accueil', shop: 'Collections', about: 'À Propos', contact: 'Contact' }
   },
   it: {
-    hero: { title: 'Saune & Spa\nper la Tua Casa', subtitle: 'Saune finlandesi, vasche idromassaggio e spa della massima qualità. Installazione professionale, garanzia inclusa.', cta: 'Vedi Catalogo' },
-    features: { quality: 'Qualità Premium', qualityDesc: 'Legni pregiati e materiali di prima qualità', shipping: 'Consegna & Installazione', shippingDesc: 'Consegna e installazione professionale incluse', support: 'Consulenza Esperta', supportDesc: 'Ti aiutiamo a scegliere il modello perfetto', lab: 'Garanzia 5 Anni', labDesc: 'Garanzia completa su tutti i prodotti' },
-    products: { title: 'La Nostra Selezione', viewAll: 'Vedi Tutto' },
-    categories: { title: 'Categorie' },
-    cta: { title: 'La Tua Oasi di Benessere a Casa', subtitle: 'Unisciti a migliaia di case soddisfatte', button: 'Richiedi Preventivo' },
+    hero: { title: 'Mobili di Lusso\nper la Tua Casa', subtitle: 'Mobili artigianali di alta gamma. Artigianato europeo, consegna e installazione incluse. Garanzia 10 anni.', cta: 'Vedi Collezioni' },
+    features: { quality: 'Qualità Artigianale', qualityDesc: 'Materiali nobili e finiture impeccabili', shipping: 'Consegna & Installazione', shippingDesc: 'Servizio completo in tutta Europa', support: 'Design Su Misura', supportDesc: 'Personalizziamo ogni pezzo per te', lab: 'Garanzia 10 Anni', labDesc: 'Qualità che dura generazioni' },
+    products: { title: 'Collezioni in Evidenza', viewAll: 'Vedi Tutto' },
+    categories: { title: 'Collezioni' },
+    cta: { title: 'Trasforma la Tua Casa', subtitle: 'Pezzi unici per spazi straordinari', button: 'Richiedi Progetto' },
     footer: { about: 'Chi Siamo', contact: 'Contatto', legal: 'Note Legali', privacy: 'Privacy', terms: 'Termini' },
-    nav: { home: 'Home', shop: 'Catalogo', about: 'Chi Siamo', contact: 'Contatto' }
+    nav: { home: 'Home', shop: 'Collezioni', about: 'Chi Siamo', contact: 'Contatto' }
   },
   pt: {
-    hero: { title: 'Saunas & Spas\npara a Sua Casa', subtitle: 'Saunas finlandesas, jacuzzis e spas da mais alta qualidade. Instalação profissional, garantia incluída.', cta: 'Ver Catálogo' },
-    features: { quality: 'Qualidade Premium', qualityDesc: 'Madeiras nobres e materiais de primeira qualidade', shipping: 'Entrega & Instalação', shippingDesc: 'Entrega e instalação profissional incluídas', support: 'Orientação Especializada', supportDesc: 'Ajudamos a escolher o modelo perfeito', lab: 'Garantia 5 Anos', labDesc: 'Garantia completa em todos os produtos' },
-    products: { title: 'Nossa Seleção', viewAll: 'Ver Tudo' },
-    categories: { title: 'Categorias' },
-    cta: { title: 'O Seu Oásis de Bem-estar em Casa', subtitle: 'Junte-se a milhares de lares satisfeitos', button: 'Pedir Orçamento' },
+    hero: { title: 'Móveis de Luxo\npara a Sua Casa', subtitle: 'Mobiliário artesanal de alta gama. Fabrico europeu, entrega e instalação incluídas. Garantia 10 anos.', cta: 'Ver Coleções' },
+    features: { quality: 'Qualidade Artesanal', qualityDesc: 'Materiais nobres e acabamentos impecáveis', shipping: 'Entrega & Instalação', shippingDesc: 'Serviço completo em toda a Europa', support: 'Design Por Medida', supportDesc: 'Personalizamos cada peça para si', lab: 'Garantia 10 Anos', labDesc: 'Qualidade que perdura gerações' },
+    products: { title: 'Coleções em Destaque', viewAll: 'Ver Tudo' },
+    categories: { title: 'Coleções' },
+    cta: { title: 'Transforme a Sua Casa', subtitle: 'Peças únicas para espaços extraordinários', button: 'Solicitar Projeto' },
     footer: { about: 'Sobre Nós', contact: 'Contato', legal: 'Aviso Legal', privacy: 'Privacidade', terms: 'Termos' },
-    nav: { home: 'Início', shop: 'Catálogo', about: 'Sobre', contact: 'Contato' }
+    nav: { home: 'Início', shop: 'Coleções', about: 'Sobre', contact: 'Contato' }
   },
   nl: {
-    hero: { title: 'Sauna\'s & Spa\'s\nvoor Uw Huis', subtitle: 'Finse sauna\'s, jacuzzi\'s en spa\'s van de hoogste kwaliteit. Professionele installatie, garantie inbegrepen.', cta: 'Bekijk Catalogus' },
-    features: { quality: 'Premium Kwaliteit', qualityDesc: 'Edele houtsoorten en eersteklas materialen', shipping: 'Levering & Installatie', shippingDesc: 'Professionele levering en installatie inbegrepen', support: 'Expert Advies', supportDesc: 'Wij helpen u het perfecte model te kiezen', lab: '5 Jaar Garantie', labDesc: 'Volledige garantie op alle producten' },
-    products: { title: 'Onze Selectie', viewAll: 'Bekijk Alles' },
-    categories: { title: 'Categorieën' },
-    cta: { title: 'Uw Wellness Oase Thuis', subtitle: 'Sluit u aan bij duizenden tevreden huishoudens', button: 'Offerte Aanvragen' },
+    hero: { title: 'Luxe Meubels\nvoor Uw Huis', subtitle: 'Hoogwaardig ambachtelijk meubilair. Europees vakmanschap, levering en installatie inbegrepen. 10 jaar garantie.', cta: 'Bekijk Collecties' },
+    features: { quality: 'Ambachtelijke Kwaliteit', qualityDesc: 'Edele materialen en onberispelijke afwerking', shipping: 'Levering & Installatie', shippingDesc: 'Complete service in heel Europa', support: 'Op Maat Ontwerp', supportDesc: 'Wij passen elk stuk voor u aan', lab: '10 Jaar Garantie', labDesc: 'Kwaliteit die generaties meegaat' },
+    products: { title: 'Uitgelichte Collecties', viewAll: 'Bekijk Alles' },
+    categories: { title: 'Collecties' },
+    cta: { title: 'Transformeer Uw Huis', subtitle: 'Unieke stukken voor buitengewone ruimtes', button: 'Project Aanvragen' },
     footer: { about: 'Over Ons', contact: 'Contact', legal: 'Juridisch', privacy: 'Privacy', terms: 'Voorwaarden' },
-    nav: { home: 'Home', shop: 'Catalogus', about: 'Over Ons', contact: 'Contact' }
+    nav: { home: 'Home', shop: 'Collecties', about: 'Over Ons', contact: 'Contact' }
   },
   pl: {
-    hero: { title: 'Sauny & Spa\ndla Twojego Domu', subtitle: 'Sauny fińskie, jacuzzi i spa najwyższej jakości. Profesjonalna instalacja, gwarancja w cenie.', cta: 'Zobacz Katalog' },
-    features: { quality: 'Jakość Premium', qualityDesc: 'Szlachetne drewno i materiały najwyższej jakości', shipping: 'Dostawa & Montaż', shippingDesc: 'Profesjonalna dostawa i montaż w cenie', support: 'Porada Eksperta', supportDesc: 'Pomagamy wybrać idealny model', lab: 'Gwarancja 5 Lat', labDesc: 'Pełna gwarancja na wszystkie produkty' },
-    products: { title: 'Nasz Wybór', viewAll: 'Zobacz Wszystko' },
-    categories: { title: 'Kategorie' },
-    cta: { title: 'Twoja Oaza Wellness w Domu', subtitle: 'Dołącz do tysięcy zadowolonych domów', button: 'Poproś o Wycenę' },
+    hero: { title: 'Luksusowe Meble\ndla Twojego Domu', subtitle: 'Wysokiej klasy meble rzemieślnicze. Europejskie rzemiosło, dostawa i montaż w cenie. Gwarancja 10 lat.', cta: 'Zobacz Kolekcje' },
+    features: { quality: 'Jakość Rzemieślnicza', qualityDesc: 'Szlachetne materiały i nienaganne wykończenie', shipping: 'Dostawa & Montaż', shippingDesc: 'Pełna obsługa w całej Europie', support: 'Design Na Wymiar', supportDesc: 'Dostosowujemy każdy element dla Ciebie', lab: 'Gwarancja 10 Lat', labDesc: 'Jakość która przetrwa pokolenia' },
+    products: { title: 'Wyróżnione Kolekcje', viewAll: 'Zobacz Wszystko' },
+    categories: { title: 'Kolekcje' },
+    cta: { title: 'Odmień Swój Dom', subtitle: 'Unikalne elementy dla niezwykłych przestrzeni', button: 'Zamów Projekt' },
     footer: { about: 'O Nas', contact: 'Kontakt', legal: 'Nota Prawna', privacy: 'Prywatność', terms: 'Regulamin' },
-    nav: { home: 'Strona główna', shop: 'Katalog', about: 'O Nas', contact: 'Kontakt' }
+    nav: { home: 'Strona główna', shop: 'Kolekcje', about: 'O Nas', contact: 'Kontakt' }
   },
   cs: {
-    hero: { title: 'Sauny & Spa\npro Váš Domov', subtitle: 'Finské sauny, vířivky a spa nejvyšší kvality. Profesionální instalace, záruka v ceně.', cta: 'Zobrazit Katalog' },
-    features: { quality: 'Premium Kvalita', qualityDesc: 'Ušlechtilé dřevo a prvotřídní materiály', shipping: 'Dodání & Instalace', shippingDesc: 'Profesionální dodání a instalace v ceně', support: 'Odborné Poradenství', supportDesc: 'Pomůžeme vám vybrat ideální model', lab: 'Záruka 5 Let', labDesc: 'Plná záruka na všechny produkty' },
-    products: { title: 'Náš Výběr', viewAll: 'Zobrazit Vše' },
-    categories: { title: 'Kategorie' },
-    cta: { title: 'Vaše Wellness Oáza Doma', subtitle: 'Připojte se k tisícům spokojených domácností', button: 'Požádat o Nabídku' },
+    hero: { title: 'Luxusní Nábytek\npro Váš Domov', subtitle: 'Prémiový řemeslný nábytek. Evropské řemeslo, dodání a instalace v ceně. Záruka 10 let.', cta: 'Zobrazit Kolekce' },
+    features: { quality: 'Řemeslná Kvalita', qualityDesc: 'Ušlechtilé materiály a bezchybné zpracování', shipping: 'Dodání & Instalace', shippingDesc: 'Kompletní služby po celé Evropě', support: 'Design Na Míru', supportDesc: 'Každý kus přizpůsobíme vašim potřebám', lab: 'Záruka 10 Let', labDesc: 'Kvalita která přetrvá generace' },
+    products: { title: 'Vybrané Kolekce', viewAll: 'Zobrazit Vše' },
+    categories: { title: 'Kolekce' },
+    cta: { title: 'Proměňte Svůj Domov', subtitle: 'Unikátní kusy pro mimořádné prostory', button: 'Požádat o Projekt' },
     footer: { about: 'O Nás', contact: 'Kontakt', legal: 'Právní Upozornění', privacy: 'Soukromí', terms: 'Podmínky' },
-    nav: { home: 'Domů', shop: 'Katalog', about: 'O Nás', contact: 'Kontakt' }
+    nav: { home: 'Domů', shop: 'Kolekce', about: 'O Nás', contact: 'Kontakt' }
   },
   el: {
-    hero: { title: 'Σάουνες & Σπα\nγια το Σπίτι σας', subtitle: 'Φινλανδικές σάουνες, τζακούζι και σπα υψηλότερης ποιότητας. Επαγγελματική εγκατάσταση, εγγύηση περιλαμβάνεται.', cta: 'Δείτε τον Κατάλογο' },
-    features: { quality: 'Premium Ποιότητα', qualityDesc: 'Ευγενή ξύλα και υλικά πρώτης ποιότητας', shipping: 'Παράδοση & Εγκατάσταση', shippingDesc: 'Επαγγελματική παράδοση και εγκατάσταση περιλαμβάνονται', support: 'Ειδική Καθοδήγηση', supportDesc: 'Σας βοηθάμε να επιλέξετε το τέλειο μοντέλο', lab: 'Εγγύηση 5 Ετών', labDesc: 'Πλήρης εγγύηση σε όλα τα προϊόντα' },
-    products: { title: 'Η Επιλογή Μας', viewAll: 'Δείτε Όλα' },
-    categories: { title: 'Κατηγορίες' },
-    cta: { title: 'Η Όαση Ευεξίας σας στο Σπίτι', subtitle: 'Γίνετε μέλος χιλιάδων ικανοποιημένων σπιτιών', button: 'Ζητήστε Προσφορά' },
+    hero: { title: 'Πολυτελή Έπιπλα\nγια το Σπίτι σας', subtitle: 'Χειροποίητα έπιπλα υψηλής ποιότητας. Ευρωπαϊκή τεχνογνωσία, παράδοση και εγκατάσταση περιλαμβάνονται. Εγγύηση 10 ετών.', cta: 'Δείτε τις Συλλογές' },
+    features: { quality: 'Χειροποίητη Ποιότητα', qualityDesc: 'Ευγενή υλικά και άψογο φινίρισμα', shipping: 'Παράδοση & Εγκατάσταση', shippingDesc: 'Πλήρης εξυπηρέτηση σε όλη την Ευρώπη', support: 'Σχεδιασμός Κατά Παραγγελία', supportDesc: 'Προσαρμόζουμε κάθε κομμάτι για εσάς', lab: 'Εγγύηση 10 Ετών', labDesc: 'Ποιότητα που διαρκεί γενιές' },
+    products: { title: 'Επιλεγμένες Συλλογές', viewAll: 'Δείτε Όλα' },
+    categories: { title: 'Συλλογές' },
+    cta: { title: 'Μεταμορφώστε το Σπίτι σας', subtitle: 'Μοναδικά κομμάτια για εξαιρετικούς χώρους', button: 'Ζητήστε Έργο' },
     footer: { about: 'Σχετικά με Εμάς', contact: 'Επικοινωνία', legal: 'Νομική Σημείωση', privacy: 'Απόρρητο', terms: 'Όροι' },
-    nav: { home: 'Αρχική', shop: 'Κατάλογος', about: 'Σχετικά', contact: 'Επικοινωνία' }
+    nav: { home: 'Αρχική', shop: 'Συλλογές', about: 'Σχετικά', contact: 'Επικοινωνία' }
   },
 };
